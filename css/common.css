@@ -4,7 +4,7 @@ body {
 }
 
 /* line 6, ../sass/_home.scss */
-.home {
+.home, .navbar {
   position: absolute;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
@@ -16,13 +16,13 @@ body {
 }
 
 /* line 13, ../sass/_home.scss */
-.body_div:hover .move-right {
-  transform: translate(0px, -500px);
-  -webkit-transform: translate(0, -500px);
+.moveUp {
+  transform: translate(0px, -542px);
+  -webkit-transform: translate(0, -542px);
   /** Chrome & Safari **/
-  -o-transform: translate(0, -500px);
+  -o-transform: translate(0, -542px);
   /** Opera **/
-  -moz-transform: translate(0, -500px);
+  -moz-transform: translate(0, -542px);
   /** Firefox **/
 }
 
@@ -32,71 +32,71 @@ body {
 }
 
 /* line 23, ../sass/_home.scss */
+.mainLogoContainer {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  background-color: #723B78;
+}
+
+/* line 32, ../sass/_home.scss */
+.companyNameContainer {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  float: left;
+}
+
+/* line 39, ../sass/_home.scss */
+.companyNameText {
+  position: absolute;
+  top: 15%;
+  text-align: center;
+  font-size: 150px;
+  color: #723B78;
+}
+
+/* line 47, ../sass/_home.scss */
 .navBar {
   position: fixed;
   width: 100%;
   height: 120px;
-  background-color: #FFCC33;
   bottom: 0px;
   left: 0px;
+  background-color: #FFCC33;
 }
 
-/* line 32, ../sass/_home.scss */
-.navIcon {
-  position: relative;
-  background-color: #723B78;
-  height: 100px;
-  width: 100px;
-  cursor: pointer;
-  box-sizing: border-box;
-  z-index: 9;
-  margin: 10px 50px;
-  float: left;
-  color: white;
-}
-
-/* line 45, ../sass/_home.scss */
+/* line 56, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
-  z-index: 9;
+  width: 800px;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   margin: auto;
-  width: 800px;
+  z-index: 9;
 }
 
-/* line 56, ../sass/_home.scss */
-.mainLogoContainer {
-  margin: 50px;
-  float: left;
-  background-color: #723B78;
-  height: 500px;
-  width: 400px;
-  height: 400px;
-}
-
-/* line 65, ../sass/_home.scss */
-.companyNameContainer {
-  width: 50%;
-  height: 500px;
+/* line 67, ../sass/_home.scss */
+.navIcon {
   position: relative;
   float: left;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  margin: 10px 50px;
+  background-color: #723B78;
+  z-index: 9;
+  cursor: pointer;
 }
 
-/* line 72, ../sass/_home.scss */
-.companyNameText {
-  color: #723B78;
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 100%;
+/* line 79, ../sass/_home.scss */
+.navIconText {
+  position: relative;
+  top: 32%;
   text-align: center;
-  font-size: 150px;
-}
-
-/* line 82, ../sass/_home.scss */
-.hideCont {
-  max-height: 0;
+  color: white;
 }

@@ -3,83 +3,83 @@ body
 	//font-family: 'Roboto', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
-.home{
+.home,.navbar{
     position: absolute;
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 2s ease-in-out; /** Firefox **/
     -o-transition: all 2s ease-in-out; /** Opera **/
 }
-.body_div:hover .move-right{
-    transform: translate(0px,-500px);
-    -webkit-transform: translate(0,-500px); /** Chrome & Safari **/
-    -o-transform: translate(0,-500px); /** Opera **/
-    -moz-transform: translate(0,-500px); /** Firefox **/
+.moveUp{
+    transform: translate(0px,-542px);
+    -webkit-transform: translate(0,-542px); /** Chrome & Safari **/
+    -o-transform: translate(0,-542px); /** Opera **/
+    -moz-transform: translate(0,-542px); /** Firefox **/
 }
 .homeShowcase
 {
 	width: 100%;
+}
+.mainLogoContainer
+{
+	position: relative;
+	float: left;
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+	background-color: #723B78;
+}
+.companyNameContainer
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    float: left;
+}
+.companyNameText
+{
+	position: absolute;
+    top: 15%;
+    text-align: center;
+	font-size: 150px;
+	color: #723B78;
 }
 .navBar
 {
 	position: fixed;
 	width: 100%;
 	height: 120px;
-	background-color: #FFCC33;
 	bottom: 0px;
 	left: 0px;
-}
-.navIcon
-{
-	position: relative;
-	background-color: #723B78;
-	height: 100px;
-	width: 100px;
-	cursor: pointer;
-	box-sizing: border-box;
-	z-index: 9;
-	margin: 10px 50px;
-	float: left;
-	color: white;
+	background-color: #FFCC33;
 }
 .navIconsContainer
 {
 	position: relative;
- 	z-index: 9;
+	width: 800px;
  	top: 0px; 
  	right: 0px;
  	bottom: 0px;
  	left: 0px;
 	margin: auto;
-	width: 800px;
+ 	z-index: 9;
 }
-.mainLogoContainer
+.navIcon
 {
-	margin: 50px;
+	position: relative;
 	float: left;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	margin: 10px 50px;
 	background-color: #723B78;
-	height: 500px;
-	width: 400px;
-	height: 400px;
+	z-index: 9;
+	cursor: pointer;
 }
-.companyNameContainer
+.navIconText
 {
-    width: 50%;
-    height: 500px;
     position: relative;
-    float: left;
-}
-.companyNameText
-{
-	color: #723B78;
-	position: absolute;
-    left: 0;
-    top: 15%;
-    width: 100%;
+    top: 32%;
     text-align: center;
-	font-size: 150px;
-}
-.hideCont
-{
-	max-height: 0;
+	color: white;
 }
