@@ -1,0 +1,102 @@
+/* line 1, ../sass/_home.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 6, ../sass/_home.scss */
+.home {
+  position: absolute;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 2s ease-in-out;
+  /** Opera **/
+}
+
+/* line 13, ../sass/_home.scss */
+.body_div:hover .move-right {
+  transform: translate(0px, -500px);
+  -webkit-transform: translate(0, -500px);
+  /** Chrome & Safari **/
+  -o-transform: translate(0, -500px);
+  /** Opera **/
+  -moz-transform: translate(0, -500px);
+  /** Firefox **/
+}
+
+/* line 19, ../sass/_home.scss */
+.homeShowcase {
+  width: 100%;
+}
+
+/* line 23, ../sass/_home.scss */
+.navBar {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  background-color: #FFCC33;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 32, ../sass/_home.scss */
+.navIcon {
+  position: relative;
+  background-color: #723B78;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 9;
+  margin: 10px 50px;
+  float: left;
+  color: white;
+}
+
+/* line 45, ../sass/_home.scss */
+.navIconsContainer {
+  position: relative;
+  z-index: 9;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  width: 800px;
+}
+
+/* line 56, ../sass/_home.scss */
+.mainLogoContainer {
+  margin: 50px;
+  float: left;
+  background-color: #723B78;
+  height: 500px;
+  width: 400px;
+  height: 400px;
+}
+
+/* line 65, ../sass/_home.scss */
+.companyNameContainer {
+  width: 50%;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+/* line 72, ../sass/_home.scss */
+.companyNameText {
+  color: #723B78;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 150px;
+}
+
+/* line 82, ../sass/_home.scss */
+.hideCont {
+  max-height: 0;
+}
