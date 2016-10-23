@@ -40,7 +40,7 @@ body
 	left: 0px;
 	background-color: #FFCC33;
 }
-.home,.navbar
+.home,.navBar
 {
     position: absolute;
     transition: all 2s ease-in-out;
@@ -54,21 +54,12 @@ body
 }
 .hide
 {
-    //transform: translate(0px,-542px);
-    //-webkit-transform: translate(0,-542px); /** Chrome & Safari **/
-    //-o-transform: translate(0,-542px); /** Opera **/
-    //-moz-transform: translate(0,-542px); /** Firefox **/
     opacity: 0;
-}
-.fixTop
-{
-	position: fixed;
-	top: 0px;
 }
 .navIconsContainer
 {
 	position: relative;
-	width: 800px;
+	width: 60%;
  	top: 0px; 
  	right: 0px;
  	bottom: 0px;

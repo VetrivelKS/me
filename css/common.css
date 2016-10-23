@@ -46,7 +46,7 @@ body {
 }
 
 /* line 43, ../sass/_home.scss */
-.home, .navbar {
+.home, .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
@@ -67,16 +67,10 @@ body {
   opacity: 0;
 }
 
-/* line 63, ../sass/_home.scss */
-.fixTop {
-  position: fixed;
-  top: 0px;
-}
-
-/* line 68, ../sass/_home.scss */
+/* line 59, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
-  width: 800px;
+  width: 60%;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -85,7 +79,7 @@ body {
   z-index: 9;
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 70, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -98,10 +92,17 @@ body {
   cursor: pointer;
 }
 
-/* line 91, ../sass/_home.scss */
+/* line 82, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 32%;
   text-align: center;
   color: white;
+}
+
+/* line 1, ../sass/_display.scss */
+.pageCont {
+  width: 100%;
+  position: relative;
+  float: left;
 }
