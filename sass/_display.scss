@@ -1,6 +1,48 @@
 .pageCont
 {
     width: 100%;
+    //height: calc(100%-120px);
     position: relative;
     float: left;
+    //background-color: black;
+}
+.thumbsGroup
+{
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+
+}
+.thumbs
+{
+	float: left;
+	border: 1px solid #723B78;
+	background-color: #FFCC33;
+	width: 15%;
+	height: 150px;
+	margin: 2% 2% 50px 2%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.thumbs {width: 21%;}
+}
+ 
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.thumbs {width: 29.33333%;}
+}
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.thumbs {width: 46%;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.thumbs {width: 96%;}
 }

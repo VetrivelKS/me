@@ -20,6 +20,9 @@ $(document).ready(function() {
 			$(".navBar").addClass("moveUp");
 			addAnim(".moveUp","0");
 			$(".home").addClass("hide");
-			$(".home").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){$(".home").css("display","none"); });
+			$(".home").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+					function(){
+						$(".home").css("display","none");
+						});
 		});
 });
