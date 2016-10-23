@@ -44,7 +44,15 @@ body
 	left: 0px;
 	background-color: #FFCC33;
 }
-.home,.navBar
+.home
+{
+    position: absolute;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 500ms ease-in-out; /** Firefox **/
+    -o-transition: all 500ms ease-in-out; /** Opera **/
+}
+.navBar
 {
     position: absolute;
     transition: all 2s ease-in-out;
