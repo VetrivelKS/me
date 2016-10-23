@@ -3,19 +3,6 @@ body
 	//font-family: 'Roboto', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
-.home,.navbar{
-    position: absolute;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 2s ease-in-out; /** Firefox **/
-    -o-transition: all 2s ease-in-out; /** Opera **/
-}
-.moveUp{
-    transform: translate(0px,-542px);
-    -webkit-transform: translate(0,-542px); /** Chrome & Safari **/
-    -o-transform: translate(0,-542px); /** Opera **/
-    -moz-transform: translate(0,-542px); /** Firefox **/
-}
 .homeShowcase
 {
 	width: 100%;
@@ -46,12 +33,37 @@ body
 }
 .navBar
 {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 120px;
 	bottom: 0px;
 	left: 0px;
 	background-color: #FFCC33;
+}
+.home,.navbar
+{
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+.home
+{
+	opacity: 1;
+}
+.hide
+{
+    //transform: translate(0px,-542px);
+    //-webkit-transform: translate(0,-542px); /** Chrome & Safari **/
+    //-o-transform: translate(0,-542px); /** Opera **/
+    //-moz-transform: translate(0,-542px); /** Firefox **/
+    opacity: 0;
+}
+.fixTop
+{
+	position: fixed;
+	top: 0px;
 }
 .navIconsContainer
 {
