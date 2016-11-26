@@ -1,6 +1,6 @@
 /* line 1, ../sass/_home.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fascinate', cursive;
 }
 
 /* line 6, ../sass/_home.scss */
@@ -9,30 +9,7 @@ body {
 }
 
 /* line 10, ../sass/_home.scss */
-.homeShowcase {
-  width: 100%;
-}
-
-/* line 14, ../sass/_home.scss */
-.mainLogoContainer {
-  position: relative;
-  float: left;
-  width: 400px;
-  height: 400px;
-  margin: 50px;
-  background-color: #723B78;
-}
-
-/* line 23, ../sass/_home.scss */
-.companyNameContainer {
-  position: relative;
-  width: 800px;
-  height: 500px;
-  float: left;
-}
-
-/* line 30, ../sass/_home.scss */
-.companyNameText {
+.homeText {
   position: absolute;
   top: 15%;
   text-align: center;
@@ -40,7 +17,7 @@ body {
   color: #723B78;
 }
 
-/* line 38, ../sass/_home.scss */
+/* line 18, ../sass/_home.scss */
 .navBar {
   position: absolute;
   width: 100%;
@@ -50,7 +27,7 @@ body {
   background-color: #FFCC33;
 }
 
-/* line 47, ../sass/_home.scss */
+/* line 27, ../sass/_home.scss */
 .home {
   position: absolute;
   transition: all 500ms ease-in-out;
@@ -62,7 +39,7 @@ body {
   /** Opera **/
 }
 
-/* line 55, ../sass/_home.scss */
+/* line 35, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -74,17 +51,17 @@ body {
   /** Opera **/
 }
 
-/* line 63, ../sass/_home.scss */
+/* line 43, ../sass/_home.scss */
 .home {
   opacity: 1;
 }
 
-/* line 67, ../sass/_home.scss */
+/* line 47, ../sass/_home.scss */
 .hide {
   opacity: 0;
 }
 
-/* line 71, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -96,7 +73,7 @@ body {
   z-index: 9;
 }
 
-/* line 82, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -109,7 +86,7 @@ body {
   cursor: pointer;
 }
 
-/* line 94, ../sass/_home.scss */
+/* line 74, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 32%;
