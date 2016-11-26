@@ -4,26 +4,33 @@
 }
 
 /* line 10, ../sass/_home.scss */
+.homePage {
+  widht: 100vw;
+  height: 100vh;
+  color: #C0C0C0;
+}
+
+/* line 16, ../sass/_home.scss */
 .homeText {
   position: absolute;
   top: 15%;
   text-align: center;
   font-size: 100px;
-  color: #000;
+  color: #fff;
   font-family: 'Fascinate', cursive;
 }
 
-/* line 19, ../sass/_home.scss */
+/* line 25, ../sass/_home.scss */
 .navBar {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 120px;
-  bottom: 0px;
+  height: 40px;
+  top: 0px;
   left: 0px;
-  background-color: #FFCC33;
+  background-color: #fff;
 }
 
-/* line 28, ../sass/_home.scss */
+/* line 34, ../sass/_home.scss */
 .home {
   position: absolute;
   transition: all 500ms ease-in-out;
@@ -35,7 +42,7 @@
   /** Opera **/
 }
 
-/* line 36, ../sass/_home.scss */
+/* line 42, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -47,17 +54,17 @@
   /** Opera **/
 }
 
-/* line 44, ../sass/_home.scss */
+/* line 50, ../sass/_home.scss */
 .home {
   opacity: 1;
 }
 
-/* line 48, ../sass/_home.scss */
+/* line 54, ../sass/_home.scss */
 .hide {
   opacity: 0;
 }
 
-/* line 52, ../sass/_home.scss */
+/* line 58, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -69,7 +76,7 @@
   z-index: 9;
 }
 
-/* line 63, ../sass/_home.scss */
+/* line 69, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -82,7 +89,7 @@
   cursor: pointer;
 }
 
-/* line 75, ../sass/_home.scss */
+/* line 81, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 32%;
