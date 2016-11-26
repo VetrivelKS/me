@@ -1,8 +1,3 @@
-/* line 1, ../sass/_home.scss */
-body {
-  font-family: 'Fascinate', cursive;
-}
-
 /* line 6, ../sass/_home.scss */
 ::-webkit-scrollbar {
   display: none;
@@ -14,10 +9,11 @@ body {
   top: 15%;
   text-align: center;
   font-size: 100px;
-  color: #723B78;
+  color: #000;
+  font-family: 'Fascinate', cursive;
 }
 
-/* line 18, ../sass/_home.scss */
+/* line 19, ../sass/_home.scss */
 .navBar {
   position: absolute;
   width: 100%;
@@ -27,7 +23,7 @@ body {
   background-color: #FFCC33;
 }
 
-/* line 27, ../sass/_home.scss */
+/* line 28, ../sass/_home.scss */
 .home {
   position: absolute;
   transition: all 500ms ease-in-out;
@@ -39,7 +35,7 @@ body {
   /** Opera **/
 }
 
-/* line 35, ../sass/_home.scss */
+/* line 36, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -51,17 +47,17 @@ body {
   /** Opera **/
 }
 
-/* line 43, ../sass/_home.scss */
+/* line 44, ../sass/_home.scss */
 .home {
   opacity: 1;
 }
 
-/* line 47, ../sass/_home.scss */
+/* line 48, ../sass/_home.scss */
 .hide {
   opacity: 0;
 }
 
-/* line 51, ../sass/_home.scss */
+/* line 52, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -73,7 +69,7 @@ body {
   z-index: 9;
 }
 
-/* line 62, ../sass/_home.scss */
+/* line 63, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -86,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-/* line 74, ../sass/_home.scss */
+/* line 75, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 32%;
