@@ -11,17 +11,24 @@
 }
 
 /* line 16, ../sass/_home.scss */
+.homeTextContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 21, ../sass/_home.scss */
 .homeText {
   position: absolute;
-  top: 15%;
+  top: 20%;
+  width: 100%;
   text-align: center;
-  font-size: 100px;
-  color: #fff;
+  font-size: 8vw;
+  color: #000;
   font-family: 'Fascinate', cursive;
   z-index: 10;
 }
 
-/* line 26, ../sass/_home.scss */
+/* line 32, ../sass/_home.scss */
 .navBar {
   position: fixed;
   width: 100%;
@@ -31,19 +38,12 @@
   background-color: #fff;
 }
 
-/* line 35, ../sass/_home.scss */
-.home {
+/* line 41, ../sass/_home.scss */
+.homePage {
   position: absolute;
-  transition: all 500ms ease-in-out;
-  -webkit-transition: all 500ms ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 500ms ease-in-out;
-  /** Firefox **/
-  -o-transition: all 500ms ease-in-out;
-  /** Opera **/
 }
 
-/* line 43, ../sass/_home.scss */
+/* line 45, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -55,17 +55,26 @@
   /** Opera **/
 }
 
-/* line 51, ../sass/_home.scss */
-.home {
+/* line 53, ../sass/_home.scss */
+.show {
+  visibility: visible;
+  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 1000ms ease-in-out;
+  /** Firefox **/
+  -o-transition: all 1000ms ease-in-out;
+  /** Opera **/
   opacity: 1;
 }
 
-/* line 55, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 .hide {
   opacity: 0;
+  visibility: hidden;
 }
 
-/* line 59, ../sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -77,23 +86,23 @@
   z-index: 9;
 }
 
-/* line 70, ../sass/_home.scss */
+/* line 78, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
   width: 100px;
   height: 30px;
   box-sizing: border-box;
-  margin: 5px 50px;
+  margin: 5px 7%;
   background-color: #723B78;
   z-index: 9;
   cursor: pointer;
 }
 
-/* line 82, ../sass/_home.scss */
+/* line 91, ../sass/_home.scss */
 .navIconText {
   position: relative;
-  top: 32%;
+  top: 30%;
   text-align: center;
   color: white;
 }
