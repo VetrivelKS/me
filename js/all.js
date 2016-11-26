@@ -29,10 +29,32 @@ $(document).ready(function() {
     design66 = [
                 {dispName:"day0", img:"0.jpg"},
                 {dispName:"day1", img:"1.jpg"},
-                {dispName:"day2", img:"2.jpg"}
+                {dispName:"day2", img:"2.jpg"},
+                {dispName:"", img:""}
                 ];
-    for(var item = 0; item < design66.length; item++ )
-        {
-            $('.portfolioPage').append('<div class="item '+design66[item].dispName+'"><img src='+"img//"+design66[item].img+' width="200px" height="200px"></img></div>');
-        }
+    for(var item = 0; item < design66.length-1; item++ )
+    {
+        design66[item].img = "\img\\\\"+design66[item].img;
+    }
+    for(var item = 0; item < design66.length-1; item++ )
+    {
+        ele = '<div class="item '+design66[item].dispName+'"><img name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img></div>';
+        $('.portfolioPage').append(ele);
+    }
+    LoadImage(design66[0].dispName,design66[0].img);
 });
+var loadingImage = false;
+function LoadImage(imageName,imageFile)
+{
+  if ((!document.images) || loadingImage)
+  {
+      return;
+  }
+  loadingImage = true;
+
+  if (document.images[imageName].src.indexOf(imageFile)<0)
+  {
+    document.images[imageName].src = imageFile;
+  }
+  loadingImage = false;
+}
