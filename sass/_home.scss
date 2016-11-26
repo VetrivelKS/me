@@ -21,6 +21,7 @@ body
     font-size: 100px;
     color: #fff;
     font-family: 'Fascinate', cursive;
+    z-index: 10;
 }
 .navBar
 {
@@ -71,9 +72,9 @@ body
     position: relative;
     float: left;
     width: 100px;
-    height: 100px;
+    height: 30px;
     box-sizing: border-box;
-    margin: 10px 50px;
+    margin: 5px 50px;
     background-color: #723B78;
     z-index: 9;
     cursor: pointer;

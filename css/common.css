@@ -18,9 +18,10 @@
   font-size: 100px;
   color: #fff;
   font-family: 'Fascinate', cursive;
+  z-index: 10;
 }
 
-/* line 25, ../sass/_home.scss */
+/* line 26, ../sass/_home.scss */
 .navBar {
   position: fixed;
   width: 100%;
@@ -30,7 +31,7 @@
   background-color: #fff;
 }
 
-/* line 34, ../sass/_home.scss */
+/* line 35, ../sass/_home.scss */
 .home {
   position: absolute;
   transition: all 500ms ease-in-out;
@@ -42,7 +43,7 @@
   /** Opera **/
 }
 
-/* line 42, ../sass/_home.scss */
+/* line 43, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -54,17 +55,17 @@
   /** Opera **/
 }
 
-/* line 50, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 .home {
   opacity: 1;
 }
 
-/* line 54, ../sass/_home.scss */
+/* line 55, ../sass/_home.scss */
 .hide {
   opacity: 0;
 }
 
-/* line 58, ../sass/_home.scss */
+/* line 59, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -76,20 +77,20 @@
   z-index: 9;
 }
 
-/* line 69, ../sass/_home.scss */
+/* line 70, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
   width: 100px;
-  height: 100px;
+  height: 30px;
   box-sizing: border-box;
-  margin: 10px 50px;
+  margin: 5px 50px;
   background-color: #723B78;
   z-index: 9;
   cursor: pointer;
 }
 
-/* line 81, ../sass/_home.scss */
+/* line 82, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 32%;
