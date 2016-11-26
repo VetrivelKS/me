@@ -1,7 +1,7 @@
 body
 {
-	//font-family: 'Roboto', sans-serif;
-	font-family: 'Open Sans', sans-serif;
+    //font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 ::-webkit-scrollbar
 { 
@@ -9,16 +9,16 @@ body
 }
 .homeShowcase
 {
-	width: 100%;
+    width: 100%;
 }
 .mainLogoContainer
 {
-	position: relative;
-	float: left;
-	width: 400px;
-	height: 400px;
-	margin: 50px;
-	background-color: #723B78;
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    background-color: #723B78;
 }
 .companyNameContainer
 {
@@ -29,20 +29,20 @@ body
 }
 .companyNameText
 {
-	position: absolute;
+    position: absolute;
     top: 15%;
     text-align: center;
-	font-size: 100px;
-	color: #723B78;
+    font-size: 100px;
+    color: #723B78;
 }
 .navBar
 {
-	position: absolute;
-	width: 100%;
-	height: 120px;
-	bottom: 0px;
-	left: 0px;
-	background-color: #FFCC33;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #FFCC33;
 }
 .home
 {
@@ -62,7 +62,7 @@ body
 }
 .home
 {
-	opacity: 1;
+    opacity: 1;
 }
 .hide
 {
@@ -70,31 +70,31 @@ body
 }
 .navIconsContainer
 {
-	position: relative;
-	width: 800px;
- 	top: 0px; 
- 	right: 0px;
- 	bottom: 0px;
- 	left: 0px;
-	margin: auto;
- 	z-index: 9;
+    position: relative;
+    width: 800px;
+     top: 0px; 
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+    margin: auto;
+     z-index: 9;
 }
 .navIcon
 {
-	position: relative;
-	float: left;
-	width: 100px;
-	height: 100px;
-	box-sizing: border-box;
-	margin: 10px 50px;
-	background-color: #723B78;
-	z-index: 9;
-	cursor: pointer;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 10px 50px;
+    background-color: #723B78;
+    z-index: 9;
+    cursor: pointer;
 }
 .navIconText
 {
     position: relative;
     top: 32%;
     text-align: center;
-	color: white;
+    color: white;
 }
