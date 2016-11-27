@@ -70,11 +70,18 @@
 
 /* line 62, ../sass/_home.scss */
 .hide {
+  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 1000ms ease-in-out;
+  /** Firefox **/
+  -o-transition: all 1000ms ease-in-out;
+  /** Opera **/
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 67, ../sass/_home.scss */
+/* line 71, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -86,7 +93,7 @@
   z-index: 9;
 }
 
-/* line 78, ../sass/_home.scss */
+/* line 82, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -99,7 +106,7 @@
   cursor: pointer;
 }
 
-/* line 91, ../sass/_home.scss */
+/* line 95, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 30%;
@@ -107,32 +114,40 @@
   color: white;
 }
 
-/* line 1, ../sass/_display.scss */
-.pageCont {
+/* line 1, ../sass/_portfolio.scss */
+img {
   width: 100%;
-  position: relative;
+  height: auto;
+}
+
+/* line 5, ../sass/_portfolio.scss */
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 10, ../sass/_portfolio.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/_portfolio.scss */
+.item {
+  padding: 0 6px;
   float: left;
+  width: 24.99999%;
 }
 
-/* line 9, ../sass/_display.scss */
-.thumbsContainer {
-  overflow: hidden;
-  border: 1px solid red;
+@media only screen and (max-width: 700px) {
+  /* line 21, ../sass/_portfolio.scss */
+  .item {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
-
-/* line 14, ../sass/_display.scss */
-.thumbsGroup {
-  border: 1px solid blue;
-  margin: auto;
-}
-
-/* line 19, ../sass/_display.scss */
-.thumbs {
-  float: left;
-  border: 1px solid #723B78;
-  background-color: #FFCC33;
-  width: 150px;
-  height: 150px;
-  margin: 20px 5%;
-  position: relative;
+@media only screen and (max-width: 500px) {
+  /* line 28, ../sass/_portfolio.scss */
+  .item {
+    width: 100%;
+  }
 }
