@@ -5,7 +5,7 @@ body
 }
 ::-webkit-scrollbar
 { 
-    display: none; 
+//    display: none; 
 }
 .homePage
 {
@@ -41,6 +41,15 @@ body
 .homePage
 {
     position: absolute;
+}
+body.home
+{
+    background-color:red;
+    transition: background-color 2s ease-in-out;
+    -webkit-transition: background-color 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: background-color 2s ease-in-out; /** Firefox **/
+    -o-transition: background-color 2s ease-in-out; /** Opera **/
+
 }
 .navBar
 {

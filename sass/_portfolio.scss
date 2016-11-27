@@ -1,22 +1,23 @@
-img {
-    width: 100%;
-    height: auto;
-}
-.desc {
-    padding: 15px;
-    text-align: center;
-}
-
 * {
     box-sizing: border-box;
-}
 
+}
+body.portfolio
+{
+    background-color: black;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
 .item {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+    height: 200px;
+    position: relative;
+    margin-top: 45px;
 }
-
 @media only screen and (max-width: 700px){
     .item {
         width: 49.99999%;
@@ -29,3 +30,17 @@ img {
         width: 100%;
     }
 }
+
+.itemContent{
+    margin: auto;
+    display: table;
+}
+
+.itemImg {
+    width: 200px;
+    height: 200px;
+}
+.desc {
+    text-align: center;
+}
+

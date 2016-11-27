@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    function addAnim(className)
+/*    function addAnim(className)
     {
         var winHeight= $(window).height();
         var eleHeight= $(className).height();
@@ -13,14 +13,16 @@ $(document).ready(function() {
     }
     $(window).resize(function(){
         addAnim(".moveUp","0");
-    });
+    });*/
     $(".navIcon").click(
         function()
         {
 //            $(".navBar").addClass("moveUp");
   //          addAnim(".moveUp","0");
             $(".homePage").removeClass("show").addClass("hide");
+            $("body").removeClass("home").addClass("portfolio");
             $(".portfolioPage").removeClass("hide").addClass("show");
+            
            /* $(".home").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
                     function(){
                         $(".home").css("display","none");
@@ -39,7 +41,22 @@ $(document).ready(function() {
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
-        ele = '<div class="item '+design66[item].dispName+'"><img name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div>';
+        ele = '<div class="item '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        $('.photos').append(ele);
+    }
+    for(var item = 0; item < design66.length-1; item++ )
+    {
+        ele = '<div class="item '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        $('.photos').append(ele);
+    }
+    for(var item = 0; item < design66.length-1; item++ )
+    {
+        ele = '<div class="item '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        $('.photos').append(ele);
+    }
+    for(var item = 0; item < design66.length-1; item++ )
+    {
+        ele = '<div class="item hide'+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
     LoadImage(design66[0].dispName,design66[0].img);
@@ -47,15 +64,20 @@ $(document).ready(function() {
 var loadingImage = false;
 function LoadImage(imageName,imageFile)
 {
-  if ((!document.images) || loadingImage)
-  {
-      return;
-  }
-  loadingImage = true;
-
-  if (document.images[imageName].src.indexOf(imageFile)<0)
-  {
-    document.images[imageName].src = imageFile;
-  }
-  loadingImage = false;
+    if(imageName && imageFile)
+    {
+        if ((!document.images) || loadingImage)
+        {
+            return;
+        }
+        loadingImage = true;
+        
+        if (document.images[imageName].src.indexOf(imageFile)<0)
+        {
+            document.images[imageName].src = imageFile;
+        }
+        loadingImage = false;
+        var className ='.'+imageName;
+        $(className).removeClass("hide").addClass("show");
+    }
 }
