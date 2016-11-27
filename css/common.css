@@ -168,9 +168,29 @@ body.portfolio {
 .itemImg {
   width: 200px;
   height: 200px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
 }
 
-/* line 43, ../sass/_portfolio.scss */
+/* line 49, ../sass/_portfolio.scss */
+.itemImg:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
+/* line 63, ../sass/_portfolio.scss */
 .desc {
   text-align: center;
+  color: white;
 }
