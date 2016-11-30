@@ -34,8 +34,8 @@ $(document).ready(function() {
                 {dispName:"day1", img:"1.jpg",desc:"this is image"},
                 {dispName:"day2", img:"2.jpg",desc:"this is image"},
                 {dispName:"day3", img:"3.jpg",desc:"this is image"},
-                {dispName:"day4", img:"4_1.jpg",desc:"this is image"},
-                {dispName:"day4", img:"4_2.jpg",desc:"this is image"},
+                {dispName:"day4_1", img:"4_1.jpg",desc:"this is image"},
+                {dispName:"day4_2", img:"4_2.jpg",desc:"this is image"},
                 {dispName:"day5", img:"5.jpg",desc:"this is image"},
                 {dispName:"day6", img:"6.jpg",desc:"this is image"},
                 {dispName:"day7", img:"7.jpg",desc:"this is image"},
@@ -67,10 +67,10 @@ $(document).ready(function() {
         ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
-    LoadImage(design66[0].dispName,design66[0].img);
+    LoadImage(design66[0].dispName,design66[0].dispName,design66[0].img);
 });
 var loadingImage = false;
-function LoadImage(imageName,imageFile)
+function LoadImage(ele,imageName,imageFile)
 {
     if(imageName && imageFile)
     {
@@ -85,7 +85,7 @@ function LoadImage(imageName,imageFile)
             document.images[imageName].src = imageFile;
         }
         loadingImage = false;
-        var className ='.'+imageName;
+        var className ='.'+ele;
         $(className).removeClass("hide").addClass("show");
     }
 }
