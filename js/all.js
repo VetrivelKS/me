@@ -49,22 +49,22 @@ $(document).ready(function() {
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
-        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
-        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
-        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
-        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item+1].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
+        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
         $('.photos').append(ele);
     }
     LoadImage(design66[0].dispName,design66[0].dispName,design66[0].img);
