@@ -70,7 +70,7 @@ function LoadImage(ele,imageName,imageFile)
             document.images[imageName].src = imageFile;
         }
         loadingImage = false;
-        var className ='.'+ele;
-        $(className).removeClass("hide").addClass("show");
+        var className ='.item.'+ele;
+        $(className).eq(0).removeClass("hide").addClass("show");
     }
 }
