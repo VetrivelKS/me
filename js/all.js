@@ -71,6 +71,7 @@ function LoadImage(ele,imageName,imageFile)
         }
         loadingImage = false;
         var className ='.item.'+ele;
+        $(className).eq(0).css("display","block");
         $(className).eq(0).removeClass("hide").addClass("show");
     }
 }
