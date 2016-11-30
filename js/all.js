@@ -33,6 +33,14 @@ $(document).ready(function() {
                 {dispName:"day0", img:"0.jpg",desc:"this is image"},
                 {dispName:"day1", img:"1.jpg",desc:"this is image"},
                 {dispName:"day2", img:"2.jpg",desc:"this is image"},
+                {dispName:"day3", img:"3.jpg",desc:"this is image"},
+                {dispName:"day4", img:"4_1.jpg",desc:"this is image"},
+                {dispName:"day4", img:"4_2.jpg",desc:"this is image"},
+                {dispName:"day5", img:"5.jpg",desc:"this is image"},
+                {dispName:"day6", img:"6.jpg",desc:"this is image"},
+                {dispName:"day7", img:"7.jpg",desc:"this is image"},
+                {dispName:"day8", img:"8.jpg",desc:"this is image"},
+                {dispName:"day9", img:"9.jpg",desc:"this is image"},
                 {dispName:"", img:"",desc:""}//leave extra empty elem
                 ];
     for(var item = 0; item < design66.length-1; item++ )
