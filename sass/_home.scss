@@ -62,20 +62,20 @@ body.home
 .show
 {
     visibility: visible;
+    opacity: 1;
     transition: all 1000ms ease-in-out;
     -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 1000ms ease-in-out; /** Firefox **/
     -o-transition: all 1000ms ease-in-out; /** Opera **/
-    opacity: 1;
 }
 .hide
 {
+    visibility: hidden;
+    opacity: 0;
     transition: all 1000ms ease-in-out;
     -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 1000ms ease-in-out; /** Firefox **/
     -o-transition: all 1000ms ease-in-out; /** Opera **/
-    opacity: 0;
-    visibility: hidden;
 }
 .navIconsContainer
 {
