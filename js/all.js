@@ -14,20 +14,38 @@ $(document).ready(function() {
     $(window).resize(function(){
         addAnim(".moveUp","0");
     });*/
-    $(".navIcon").click(
+    /*$(".navHome").click(
         function()
         {
-//            $(".navBar").addClass("moveUp");
-  //          addAnim(".moveUp","0");
-            $(".homePage").removeClass("show").addClass("hide");
-            $("body").removeClass("home").addClass("portfolio");
-            $(".portfolioPage").removeClass("hide").addClass("show");
-            
-           /* $(".home").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
-                    function(){
-                        $(".home").css("display","none");
-                        });*/
+            //                $(".navBar").addClass("moveUp");
+            //            addAnim(".moveUp","0");
+        $(".homePage").removeClass("show").addClass("hide");
+        var currentDisp = $("body").attr("currentDisp");
+        $("body").removeClass(currentDisp).removeClass(currentDisp).addClass("portCatPage");
+        $(".portCatPage").removeClass("hide").addClass("show");
+        
+       /* $(".home").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+                function(){
+                    $(".home").css("display","none");
+                    });
+        });*/
+    $(".navEle").click(
+        function()
+        {
+        var toDisplay = $(this).attr("navTo");
+        var currentDisp = $("body").attr("currentDisp");
+        $("body").attr("currentDisp",toDisplay);
+        if(toDisplay != currentDisp)
+        {
+            $(this).siblings().removeClass("highlight");
+            $(this).addClass("highlight");
+            $("body").removeClass(currentDisp).removeClass(currentDisp).addClass(toDisplay);
+            $("body").removeClass("home").addClass("portCat");
+            $("."+currentDisp).removeClass("show").addClass("hide");
+            $("."+toDisplay).removeClass("hide").addClass("show");
+        }
     });
+    
     var design66 = [];
     design66 = [
                 {dispName:"day0", img:"0.jpg",desc:"this is image"},
@@ -50,7 +68,7 @@ $(document).ready(function() {
     for(var item = 0; item < design66.length-1; item++ )
     {
         ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img><div class="desc">'+design66[item].desc+'</div></div></div>';
-        $('.photos').append(ele);
+        $('.designItems').append(ele);
     }
     LoadImage(design66[0].dispName,design66[0].dispName,design66[0].img);
 });

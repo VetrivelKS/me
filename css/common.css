@@ -1,68 +1,16 @@
-/* line 10, ../sass/_home.scss */
-.homePage {
-  widht: 100vw;
-  height: 100vh;
-  color: #C0C0C0;
+/* line 1, ../sass/_home.scss */
+* {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
 }
 
-/* line 16, ../sass/_home.scss */
-.homeTextContainer {
-  width: 100vw;
-  height: 100vh;
+/* line 9, ../sass/_home.scss */
+::-webkit-scrollbar {
+  display: none;
 }
 
-/* line 21, ../sass/_home.scss */
-.homeText {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  text-align: center;
-  font-size: 8vw;
-  color: #000;
-  font-family: 'Fascinate', cursive;
-  z-index: 10;
-}
-
-/* line 32, ../sass/_home.scss */
-.navBar {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  top: 0px;
-  left: 0px;
-  background-color: #fff;
-}
-
-/* line 41, ../sass/_home.scss */
-.homePage {
-  position: absolute;
-}
-
-/* line 45, ../sass/_home.scss */
-body.home {
-  background-color: red;
-  transition: background-color 2s ease-in-out;
-  -webkit-transition: background-color 2s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: background-color 2s ease-in-out;
-  /** Firefox **/
-  -o-transition: background-color 2s ease-in-out;
-  /** Opera **/
-}
-
-/* line 54, ../sass/_home.scss */
-.navBar {
-  position: absolute;
-  transition: all 2s ease-in-out;
-  -webkit-transition: all 2s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 2s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 2s ease-in-out;
-  /** Opera **/
-}
-
-/* line 62, ../sass/_home.scss */
+/* line 13, ../sass/_home.scss */
 .show {
   visibility: visible;
   opacity: 1;
@@ -75,10 +23,11 @@ body.home {
   /** Opera **/
 }
 
-/* line 71, ../sass/_home.scss */
+/* line 22, ../sass/_home.scss */
 .hide {
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
   transition: all 1000ms ease-in-out;
   -webkit-transition: all 1000ms ease-in-out;
   /** Chrome & Safari **/
@@ -88,7 +37,59 @@ body.home {
   /** Opera **/
 }
 
-/* line 80, ../sass/_home.scss */
+/* line 32, ../sass/_home.scss */
+.homeTextContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 37, ../sass/_home.scss */
+.homeText {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  color: #000;
+  z-index: 10;
+}
+
+/* line 48, ../sass/_home.scss */
+.navBar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+}
+
+/* line 57, ../sass/_home.scss */
+.homePage {
+  position: absolute;
+}
+
+/*body.home
+{
+    background-color:red;
+    transition: background-color 2s ease-in-out;
+    -webkit-transition: background-color 2s ease-in-out;
+    -moz-transition: background-color 2s ease-in-out;
+    -o-transition: background-color 2s ease-in-out;
+}*/
+/* line 69, ../sass/_home.scss */
+.navBar {
+  position: absolute;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 2s ease-in-out;
+  /** Opera **/
+}
+
+/* line 77, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -100,25 +101,66 @@ body.home {
   z-index: 9;
 }
 
-/* line 91, ../sass/_home.scss */
+/* line 88, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
-  width: 100px;
+  width: 10%;
   height: 30px;
   box-sizing: border-box;
   margin: 5px 7%;
-  background-color: #723B78;
+  background-color: black;
   z-index: 9;
   cursor: pointer;
 }
 
-/* line 104, ../sass/_home.scss */
+/* line 101, ../sass/_home.scss */
 .navIconText {
   position: relative;
-  top: 30%;
+  top: 20%;
   text-align: center;
   color: white;
+}
+
+/* line 108, ../sass/_home.scss */
+.pages {
+  margin-top: 40px;
+}
+
+/* line 112, ../sass/_home.scss */
+.highlight {
+  background-color: white;
+  border: 1px solid black;
+  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 1000ms ease-in-out;
+  /** Firefox **/
+  -o-transition: all 1000ms ease-in-out;
+  /** Opera **/
+}
+
+/* line 123, ../sass/_home.scss */
+.highlight .navIconText {
+  color: black;
+}
+
+/* line 1, ../sass/_portCat.scss */
+.categoryItem {
+  float: left;
+  height: calc(96% - 40px);
+  width: 46%;
+  margin: 2%;
+  background-color: black;
+}
+
+/* line 9, ../sass/_portCat.scss */
+.categoryText {
+  text-align: center;
+  color: white;
+  margin-top: 44%;
+  font-weight: 700;
+  font-size: 3.7em;
 }
 
 /* line 1, ../sass/_portfolio.scss */
@@ -126,16 +168,25 @@ body.home {
   box-sizing: border-box;
 }
 
-/* line 5, ../sass/_portfolio.scss */
-body.portfolio {
-  background-color: black;
+/* line 4, ../sass/_portfolio.scss */
+body {
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
 
-/* line 13, ../sass/_portfolio.scss */
+/* line 14, ../sass/_portfolio.scss */
+body.designPage ::-webkit-scrollbar {
+  display: block !important;
+}
+
+/* line 19, ../sass/_portfolio.scss */
+.itemsCont {
+  position: absolute;
+}
+
+/* line 25, ../sass/_portfolio.scss */
 .item {
   padding: 0 6px;
   float: left;
@@ -146,25 +197,25 @@ body.portfolio {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 22, ../sass/_portfolio.scss */
+  /* line 34, ../sass/_portfolio.scss */
   .item {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 29, ../sass/_portfolio.scss */
+  /* line 41, ../sass/_portfolio.scss */
   .item {
     width: 100%;
   }
 }
-/* line 34, ../sass/_portfolio.scss */
+/* line 46, ../sass/_portfolio.scss */
 .itemContent {
   margin: auto;
   display: table;
 }
 
-/* line 39, ../sass/_portfolio.scss */
+/* line 51, ../sass/_portfolio.scss */
 .itemImg {
   width: 200px;
   height: 200px;
@@ -177,7 +228,7 @@ body.portfolio {
   -o-transition: 1s ease-in-out;
 }
 
-/* line 51, ../sass/_portfolio.scss */
+/* line 63, ../sass/_portfolio.scss */
 .itemImg:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -188,7 +239,7 @@ body.portfolio {
   -o-transition: 1s ease-in-out;
 }
 
-/* line 62, ../sass/_portfolio.scss */
+/* line 74, ../sass/_portfolio.scss */
 .desc {
   text-align: center;
   color: white;

@@ -5,23 +5,23 @@
         <link href="css/common.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/all.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
-    <body class="home">
+    <body currentDisp="homePage">
         <div class="navBar show">
-            <div class="navIcon navHome">
+            <div class="navEle navIcon navHome highlight" navTo="homePage">
                 <div class="navIconText">Home</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navIcon navPortfolioe">
+            <div class="navEle navIcon navPortfolio" navTo="portCatPage">
                 <div class="navIconText">Portfolio</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navIcon navAbout">
+            <div class="navEle navIcon navAbout"  navTo="aboutPage">
                 <div class="navIconText">About</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navIcon navContact">
+            <div class="navEle navIcon navContact" navTo="contactPage">
                 <div class="navIconText">Contact</div>
                 <div class="navIconImg"></div>
             </div>
@@ -41,11 +41,35 @@
             </div>
             
             <!-- PORTFOLIO  -->
-            
-            <div class="pages portfolioPage hide">
-                <div class="portfolioBg">
-                    <section class="photos"></section>
+            <div class="pages portCatPage hide">
+                <div class="categoryCont">
+                    <div class="navEle categoryItem Design"  navTo="designPage">
+                        <div class="categoryImg designCatImg"></div>
+                        <div class="categoryText designCatText">DESIGN</div>
+                    </div>
+                    <div class="navEle categoryItem Photography"  navTo="photoPage">
+                         <div class="categoryImg photoCatImg"></div>
+                         <div class="categoryText photoCatText">PHOTOGRAPHS</div>
+                    </div>
                 </div>
+            </div>
+            
+            
+            
+            <div class="pages designPage hide">
+                <div class="portfolioBg">
+                    <div class="itemsCont designItems"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="pages aboutPage hide">
+            </div>
+            
+            
+            
+            <div class="pages contactPage hide">
             </div>
         </div>
     </body>

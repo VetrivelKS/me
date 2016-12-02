@@ -1,17 +1,33 @@
-body
+*
 {
     //font-family: 'Roboto', sans-serif;
     //font-family: 'Fascinate', cursive;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
 }
 ::-webkit-scrollbar
 { 
-//    display: none; 
+    display: none; 
 }
-.homePage
+.show
 {
-    widht: 100vw;
-    height: 100vh;
-    color: #C0C0C0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 1000ms ease-in-out; /** Firefox **/
+    -o-transition: all 1000ms ease-in-out; /** Opera **/
+}
+.hide
+{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 1000ms ease-in-out; /** Firefox **/
+    -o-transition: all 1000ms ease-in-out; /** Opera **/
 }
 .homeTextContainer
 {
@@ -26,7 +42,7 @@ body
     text-align: center;
     font-size: 8vw;
     color: #000;
-    font-family: 'Fascinate', cursive;
+    //font-family: 'Fascinate', cursive;
     z-index: 10;
 }
 .navBar
@@ -42,15 +58,14 @@ body
 {
     position: absolute;
 }
-body.home
+/*body.home
 {
     background-color:red;
     transition: background-color 2s ease-in-out;
-    -webkit-transition: background-color 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: background-color 2s ease-in-out; /** Firefox **/
-    -o-transition: background-color 2s ease-in-out; /** Opera **/
-
-}
+    -webkit-transition: background-color 2s ease-in-out;
+    -moz-transition: background-color 2s ease-in-out;
+    -o-transition: background-color 2s ease-in-out;
+}*/
 .navBar
 {
     position: absolute;
@@ -58,24 +73,6 @@ body.home
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 2s ease-in-out; /** Firefox **/
     -o-transition: all 2s ease-in-out; /** Opera **/
-}
-.show
-{
-    visibility: visible;
-    opacity: 1;
-    transition: all 1000ms ease-in-out;
-    -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 1000ms ease-in-out; /** Firefox **/
-    -o-transition: all 1000ms ease-in-out; /** Opera **/
-}
-.hide
-{
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1000ms ease-in-out;
-    -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 1000ms ease-in-out; /** Firefox **/
-    -o-transition: all 1000ms ease-in-out; /** Opera **/
 }
 .navIconsContainer
 {
@@ -92,11 +89,11 @@ body.home
 {
     position: relative;
     float: left;
-    width: 100px;
+    width: 10%;
     height: 30px;
     box-sizing: border-box;
     margin: 5px 7%;
-    background-color: #723B78;
+    background-color: black;
     z-index: 9;
     cursor: pointer;
     
@@ -104,7 +101,27 @@ body.home
 .navIconText
 {
     position: relative;
-    top: 30%;
+    top: 20%;
     text-align: center;
     color: white;
+}
+.pages
+{
+    margin-top:40px;
+}
+.highlight
+{
+    background-color: white;
+    border: 1px solid black;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 1000ms ease-in-out; /** Firefox **/
+    -o-transition: all 1000ms ease-in-out; /** Opera **/
+}
+.highlight
+{
+    .navIconText
+    {
+        color : black;
+    }
 }

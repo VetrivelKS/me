@@ -1,15 +1,27 @@
 * {
     box-sizing: border-box;
-
 }
-body.portfolio
+body
 {
-    background-color: black;
+    //background-color: black;
     -webkit-transition: background-color 2s ease-out;
     -moz-transition: background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
     transition: background-color 2s ease-out;
 }
+body.designPage
+{
+    ::-webkit-scrollbar
+    { 
+        display: block !important; 
+    }
+}
+.itemsCont
+{
+    position: absolute;
+}
+
+
 .item {
     padding: 0 6px;
     float: left;
