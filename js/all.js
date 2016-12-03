@@ -63,7 +63,7 @@ $(document).ready(function() {
                 ];
     for(var item = 0; item < design66.length-1; item++ )
     {
-        design66[item].img = "\img\\\\"+design66[item].img;
+        design66[item].img = "\img\\\\design\\\\"+design66[item].img;
     }
     for(var item = 0; item < design66.length-1; item++ )
     {
@@ -90,6 +90,10 @@ function LoadImage(ele,imageName,imageFile)
         loadingImage = false;
         var className ='.item.'+ele;
         //$(className).eq(0).css("display","block");
-        $(className).eq(0).removeClass("hide").addClass("show");
+        dispShow($(className).eq(0));
     }
+}
+function dispShow(ele)
+{
+    $(ele).removeClass("hide").addClass("show");
 }

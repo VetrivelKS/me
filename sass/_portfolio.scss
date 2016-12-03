@@ -47,10 +47,12 @@ body.designPage
     margin: auto;
     display: table;
 }
-
-.itemImg {
+.itemImg
+{
     width: 200px;
     height: 200px;
+}
+.itemImg, .homeImg {
     filter: grayscale(100%);
 // Browser Specific
     -webkit-filter: grayscale(100%);
@@ -60,7 +62,7 @@ body.designPage
     -o-filter: grayscale(100%);
     -o-transition: 1s ease-in-out;
 }
-.itemImg:hover
+.itemImg:hover,.homeImg:hover
 {
     filter: grayscale(0%);
 // Browser Specific
@@ -75,4 +77,7 @@ body.designPage
     text-align: center;
     color: white;
 }
-
+.homeImg
+{
+    border-radius: 50%;
+}
