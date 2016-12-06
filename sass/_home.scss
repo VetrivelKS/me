@@ -116,7 +116,7 @@ body
     }
 }
 
-.pageCont
+.pageCont,.homeText,.homeDesc
 {
     width: 100%;
 }
@@ -128,10 +128,6 @@ body
     color: #000;
     //font-family: 'Fascinate', cursive;
     z-index: 10;
-}
-.homeDescContainer
-{
-    height: 100%;
 }
 .homeDesc
 {

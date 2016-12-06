@@ -135,7 +135,7 @@ body {
 }
 
 /* line 119, ../sass/_home.scss */
-.pageCont {
+.pageCont, .homeText, .homeDesc {
   width: 100%;
 }
 
@@ -149,11 +149,6 @@ body {
 }
 
 /* line 132, ../sass/_home.scss */
-.homeDescContainer {
-  height: 100%;
-}
-
-/* line 136, ../sass/_home.scss */
 .homeDesc {
   text-align: center;
   font-size: 3vw;
@@ -161,7 +156,7 @@ body {
   z-index: 10;
 }
 
-/* line 144, ../sass/_home.scss */
+/* line 140, ../sass/_home.scss */
 .homeImg {
   height: 500px;
   width: 500px;
