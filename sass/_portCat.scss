@@ -1,9 +1,9 @@
 .categoryItem
 {
     float: left;
-    height: calc(96% - 40px);
-    width: 46%;
-    margin: 2%;
+    height: calc(100% - 40px);
+    width: calc(50% - 40px);
+    margin: 20px;
     background-color: black;
     cursor : pointer;
 }
@@ -11,7 +11,7 @@
 {
     text-align: center;
     color: white;
-    margin-top: 44%;
+    margin-top: 200px;
     font-weight: 700;
     font-size: 5.5vw;
 }
