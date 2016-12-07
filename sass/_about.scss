@@ -1,0 +1,23 @@
+.leftCont
+{
+    float: left;
+    width: 200px;
+}
+.rightCont
+{
+    float:right;
+    width: calc(100% - 200px);
+}
+.mainTextCont
+{
+    margin-top: 40px;
+    padding: 10px
+}
+.mainText
+{
+    font-size: 3vw;
+}
+.listCont
+{
+    margin-top: 20px;
+}

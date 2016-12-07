@@ -48,17 +48,17 @@ $(document).ready(function() {
     
     var design66 = [];
     design66 = [
-                {dispName:"day0", img:"0.jpg",desc:"this is image"},
-                {dispName:"day1", img:"1.jpg",desc:"this is image"},
-                {dispName:"day2", img:"2.jpg",desc:"this is image"},
-                {dispName:"day3", img:"3.jpg",desc:"this is image"},
-                {dispName:"day4_1", img:"4_1.jpg",desc:"this is image"},
-                {dispName:"day4_2", img:"4_2.jpg",desc:"this is image"},
-                {dispName:"day5", img:"5.jpg",desc:"this is image"},
-                {dispName:"day6", img:"6.jpg",desc:"this is image"},
-                {dispName:"day7", img:"7.jpg",desc:"this is image"},
-                {dispName:"day8", img:"8.jpg",desc:"this is image"},
-                {dispName:"day9", img:"9.jpg",desc:"this is image"},
+                {dispName:"day0", img:"0.jpg",desc:"Camera icon"},
+                {dispName:"day1", img:"1.jpg",desc:"#1 logo"},
+                {dispName:"day2", img:"2.jpg",desc:"Prestige Sailing School Logo"},
+                {dispName:"day3", img:"3.jpg",desc:"Trip to MOON logo"},
+                {dispName:"day4_1", img:"4_1.jpg",desc:"Zim's Icecream Parlour Logo"},
+                {dispName:"day4_2", img:"4_2.jpg",desc:"Zim's Icecream Parlour Logo #2"},
+                {dispName:"day5", img:"5.jpg",desc:"The Laser Saloon Logo"},
+                {dispName:"day6", img:"6.jpg",desc:"The Silent Velcro Logo"},
+                {dispName:"day7", img:"7.jpg",desc:"Snake Sweater Logo"},
+                {dispName:"day8", img:"8.jpg",desc:"Ken's Candy shop Logo"},
+                {dispName:"day9", img:"9.jpg",desc:"Grass Fuel"},
                 {dispName:"", img:"",desc:""}//leave extra empty elem
                 ];
     for(var item = 0; item < design66.length-1; item++ )

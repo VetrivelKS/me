@@ -168,7 +168,7 @@ body {
 /* line 1, ../sass/_portCat.scss */
 .categoryItem {
   float: left;
-  height: calc(100% - 40px);
+  height: calc(50% - 40px);
   width: calc(50% - 40px);
   margin: 20px;
   background-color: black;
@@ -179,9 +179,9 @@ body {
 .categoryText {
   text-align: center;
   color: white;
-  margin-top: 200px;
+  margin-top: 100px;
   font-weight: 700;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
 }
 
 /* line 1, ../sass/_portfolio.scss */
@@ -276,4 +276,32 @@ body.designPage ::-webkit-scrollbar {
 /* line 83, ../sass/_portfolio.scss */
 .homeImg {
   border-radius: 50%;
+}
+
+/* line 1, ../sass/_about.scss */
+.leftCont {
+  float: left;
+  width: 200px;
+}
+
+/* line 6, ../sass/_about.scss */
+.rightCont {
+  float: right;
+  width: calc(100% - 200px);
+}
+
+/* line 11, ../sass/_about.scss */
+.mainTextCont {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+/* line 16, ../sass/_about.scss */
+.mainText {
+  font-size: 3vw;
+}
+
+/* line 20, ../sass/_about.scss */
+.listCont {
+  margin-top: 20px;
 }
