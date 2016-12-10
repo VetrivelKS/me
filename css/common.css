@@ -212,12 +212,12 @@ body.designPage ::-webkit-scrollbar {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
-  height: 200px;
+  height: 250px;
   position: relative;
   margin-top: 45px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 940px) {
   /* line 34, ../sass/_portfolio.scss */
   .item {
     width: 49.99999%;
@@ -234,9 +234,21 @@ body.designPage ::-webkit-scrollbar {
 .itemContent {
   margin: auto;
   display: table;
+  width: 250px;
+  height: 250px;
+  border: 1px solid;
 }
 
-/* line 50, ../sass/_portfolio.scss */
+/* line 53, ../sass/_portfolio.scss */
+.itemImgCont {
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  width: 200px;
+}
+
+/* line 61, ../sass/_portfolio.scss */
 .itemImg {
   width: 200px;
   height: 200px;
@@ -244,7 +256,26 @@ body.designPage ::-webkit-scrollbar {
   border-bottom: 1px solid black;
 }
 
-/* line 57, ../sass/_portfolio.scss */
+/* line 68, ../sass/_portfolio.scss */
+.itemDescCont {
+  position: absolute;
+  bottom: 15px;
+  width: 250px;
+}
+
+/* line 74, ../sass/_portfolio.scss */
+.itemDesc {
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+/* line 79, ../sass/_portfolio.scss */
+.homeImg {
+  border-radius: 50%;
+}
+
+/* line 83, ../sass/_portfolio.scss */
 .itemImg, .homeImg {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -255,7 +286,7 @@ body.designPage ::-webkit-scrollbar {
   -o-transition: 1s ease-in-out;
 }
 
-/* line 67, ../sass/_portfolio.scss */
+/* line 93, ../sass/_portfolio.scss */
 .itemImg:hover, .homeImg:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -264,18 +295,6 @@ body.designPage ::-webkit-scrollbar {
   -moz-transition: 1s ease-in-out;
   -o-filter: grayscale(0%);
   -o-transition: 1s ease-in-out;
-}
-
-/* line 78, ../sass/_portfolio.scss */
-.desc {
-  text-align: center;
-  color: black;
-  font-weight: 500;
-}
-
-/* line 83, ../sass/_portfolio.scss */
-.homeImg {
-  border-radius: 50%;
 }
 
 /* line 1, ../sass/_about.scss */
