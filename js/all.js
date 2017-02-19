@@ -56,7 +56,6 @@ $(document).ready(function() {
                 {dispName:"day4_2", img:"4_2.jpg",desc:"Zim's Icecream Parlour Logo #2"},
                 {dispName:"day5", img:"5.jpg",desc:"The Laser Saloon Logo"},
                 {dispName:"day6", img:"6.jpg",desc:"The Silent Velcro Logo"},
-                {dispName:"day7", img:"7.jpg",desc:"Snake Sweater Logo"},
                 {dispName:"day8", img:"8.jpg",desc:"Ken's Candy shop Logo"},
                 {dispName:"day9", img:"9.jpg",desc:"Grass Fuel"},
                 {dispName:"", img:"",desc:""}//leave extra empty elem
@@ -71,6 +70,16 @@ $(document).ready(function() {
         $('.designItems').append(ele);
     }
     LoadImage(design66[0].dispName,design66[0].dispName,design66[0].img);
+    $('.itemContent').unbind("mouseenter").bind("mouseenter",function(event)
+            {
+                $(event.target).closest('.itemContent').addClass("highlight");
+                $('.itemContent').not(event.target).addClass("dull");
+            });
+    $('.itemContent').unbind("mouseleave").bind("mouseleave",function(event)
+            {
+                $(event.target).closest('.itemContent').removeClass("highlight");
+                $('.itemContent').not(event.target).removeClass("dull");
+            });
 });
 var loadingImage = false;
 function LoadImage(ele,imageName,imageFile)
