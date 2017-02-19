@@ -130,7 +130,7 @@ body {
 }
 
 /* line 113, ../sass/_home.scss */
-.highlight .navIconText {
+.highlight .navIconText, .highlight .categoryText {
   color: black;
 }
 
@@ -277,30 +277,29 @@ body.designPage ::-webkit-scrollbar {
 /* line 82, ../sass/_portfolio.scss */
 .itemContent {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* line 86, ../sass/_portfolio.scss */
-.dull {
-  opacity: 0.5;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
+}
+
+/* line 93, ../sass/_portfolio.scss */
+.dull {
+  opacity: 0.5;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
 }
 
-/* line 98, ../sass/_portfolio.scss */
+/* line 102, ../sass/_portfolio.scss */
 .highlight {
+  box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
   filter: grayscale(0%);
-  box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);

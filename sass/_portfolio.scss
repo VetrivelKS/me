@@ -82,28 +82,28 @@ body.designPage
 .itemContent
 {
      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 .dull
 {
     opacity: 0.5;
     filter: grayscale(100%);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
+
 }
 .highlight
 {
+    box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
     opacity: 1;
     filter: grayscale(0%);
-    box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
