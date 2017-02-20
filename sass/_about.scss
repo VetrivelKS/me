@@ -23,9 +23,20 @@
 .listCont
 {
     margin-top: 20px;
+    width: 270px;
+    height: 200px;
+    box-shadow: 7px 9px 36px -8px;
+    margin: 50px;
+    padding: 10px;
 }
 .listSplitCont
 {
     width: 50%;
     float: left;
+}
+.liHeaderText
+{
+    text-align: center;
+    padding-bottom: 11px;
+    border-bottom: 1px solid;
 }

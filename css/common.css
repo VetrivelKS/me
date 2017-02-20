@@ -347,12 +347,24 @@ body.designPage ::-webkit-scrollbar {
 /* line 23, ../sass/_about.scss */
 .listCont {
   margin-top: 20px;
+  width: 270px;
+  height: 200px;
+  box-shadow: 7px 9px 36px -8px;
+  margin: 50px;
+  padding: 10px;
 }
 
-/* line 27, ../sass/_about.scss */
+/* line 32, ../sass/_about.scss */
 .listSplitCont {
   width: 50%;
   float: left;
+}
+
+/* line 37, ../sass/_about.scss */
+.liHeaderText {
+  text-align: center;
+  padding-bottom: 11px;
+  border-bottom: 1px solid;
 }
 
 /* line 1, ../sass/contact.scss */
