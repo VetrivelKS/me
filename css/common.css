@@ -6,17 +6,22 @@
 }
 
 /* line 9, ../sass/_home.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 13, ../sass/_home.scss */
 body {
   width: 100%;
   margin: 0px;
 }
 
-/* line 14, ../sass/_home.scss */
+/* line 18, ../sass/_home.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 18, ../sass/_home.scss */
+/* line 22, ../sass/_home.scss */
 .show {
   visibility: visible;
   opacity: 1;
@@ -29,7 +34,7 @@ body {
   /** Opera **/
 }
 
-/* line 27, ../sass/_home.scss */
+/* line 31, ../sass/_home.scss */
 .hide {
   visibility: hidden;
   opacity: 0;
@@ -43,7 +48,7 @@ body {
   /** Opera **/
 }
 
-/* line 37, ../sass/_home.scss */
+/* line 41, ../sass/_home.scss */
 .navBar {
   margin: 10px 0px;
   position: fixed;
@@ -63,7 +68,7 @@ body {
     -moz-transition: background-color 2s ease-in-out;
     -o-transition: background-color 2s ease-in-out;
 }*/
-/* line 56, ../sass/_home.scss */
+/* line 60, ../sass/_home.scss */
 .navBar {
   position: absolute;
   transition: all 2s ease-in-out;
@@ -75,7 +80,7 @@ body {
   /** Opera **/
 }
 
-/* line 64, ../sass/_home.scss */
+/* line 68, ../sass/_home.scss */
 .navIconsContainer {
   position: relative;
   width: 800px;
@@ -87,7 +92,7 @@ body {
   z-index: 9;
 }
 
-/* line 75, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 .navIcon {
   position: relative;
   float: left;
@@ -100,7 +105,7 @@ body {
   cursor: pointer;
 }
 
-/* line 88, ../sass/_home.scss */
+/* line 92, ../sass/_home.scss */
 .navIconText {
   position: relative;
   top: 20%;
@@ -108,7 +113,7 @@ body {
   color: white;
 }
 
-/* line 95, ../sass/_home.scss */
+/* line 99, ../sass/_home.scss */
 .pages {
   margin-top: 60px;
   width: 100%;
@@ -116,7 +121,7 @@ body {
   position: absolute;
 }
 
-/* line 102, ../sass/_home.scss */
+/* line 106, ../sass/_home.scss */
 .navEle.highlight {
   background-color: white;
   border: 1px solid black;
@@ -129,40 +134,52 @@ body {
   /** Opera **/
 }
 
-/* line 113, ../sass/_home.scss */
+/* line 117, ../sass/_home.scss */
 .highlight .navIconText, .highlight .categoryText {
   color: black;
 }
 
-/* line 119, ../sass/_home.scss */
+/* line 123, ../sass/_home.scss */
 .pageCont, .homeText, .homeDesc {
   width: 100%;
 }
 
-/* line 123, ../sass/_home.scss */
+/* line 127, ../sass/_home.scss */
 .homeText {
-  margin-top: 8%;
   text-align: center;
-  font-size: 8vw;
+  font-size: 5vw;
   color: #000;
   z-index: 10;
 }
 
-/* line 132, ../sass/_home.scss */
+/* line 135, ../sass/_home.scss */
 .homeDesc {
   text-align: center;
   font-size: 3vw;
   color: #000;
-  z-index: 10;
 }
 
-/* line 140, ../sass/_home.scss */
-.homeImg {
+/* line 143, ../sass/_home.scss */
+.subText {
+  font-size: 2vw;
+  color: #8e8b8b;
+}
+
+/* line 148, ../sass/_home.scss */
+.homeImageContainer {
   height: 500px;
   width: 500px;
-  top: 0px;
-  bottom: 0px;
-  margin: auto;
+  float: left;
+}
+
+/* line 154, ../sass/_home.scss */
+.homeImg {
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 22px 50px -13px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
 }
 
 /* line 1, ../sass/_portCat.scss */
@@ -305,30 +322,56 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(0%);
 }
 
-/* line 1, ../sass/_about.scss */
-.leftCont {
+/* line 3, ../sass/_about.scss */
+.aboutPage .leftCont {
   float: left;
   width: 200px;
 }
-
-/* line 6, ../sass/_about.scss */
-.rightCont {
+/* line 8, ../sass/_about.scss */
+.aboutPage .rightCont {
   float: right;
   width: calc(100% - 200px);
 }
 
-/* line 11, ../sass/_about.scss */
+/* line 14, ../sass/_about.scss */
 .mainTextCont {
   margin-top: 40px;
   padding: 10px;
 }
 
-/* line 16, ../sass/_about.scss */
+/* line 19, ../sass/_about.scss */
 .mainText {
   font-size: 3vw;
 }
 
-/* line 20, ../sass/_about.scss */
+/* line 23, ../sass/_about.scss */
 .listCont {
   margin-top: 20px;
+}
+
+/* line 27, ../sass/_about.scss */
+.listSplitCont {
+  width: 50%;
+  float: left;
+}
+
+/* line 1, ../sass/contact.scss */
+.contactInfoCont {
+  width: 50%;
+  float: left;
+}
+
+/* line 6, ../sass/contact.scss */
+.submitButton {
+  border: solid 1px black;
+  height: 40px;
+  width: 65px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* line 15, ../sass/contact.scss */
+.inputMsg {
+  width: 95%;
 }

@@ -1,12 +1,15 @@
-.leftCont
+.aboutPage 
 {
-    float: left;
-    width: 200px;
-}
-.rightCont
-{
-    float:right;
-    width: calc(100% - 200px);
+    .leftCont
+    {
+        float: left;
+        width: 200px;
+    }
+    .rightCont
+    {
+        float:right;
+        width: calc(100% - 200px);
+    }
 }
 .mainTextCont
 {
@@ -20,4 +23,9 @@
 .listCont
 {
     margin-top: 20px;
+}
+.listSplitCont
+{
+    width: 50%;
+    float: left;
 }
