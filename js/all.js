@@ -45,31 +45,18 @@ $(document).ready(function() {
             $("."+toDisplay).removeClass("hide").addClass("show");
         }
     });
-    
-    var design66 = [];
-    design66 = [
-                {dispName:"day0", img:"0.jpg",desc:"Camera icon"},
-                {dispName:"day1", img:"1.jpg",desc:"#1 logo"},
-                {dispName:"day2", img:"2.jpg",desc:"Prestige Sailing School Logo"},
-                {dispName:"day3", img:"3.jpg",desc:"Trip to MOON logo"},
-                {dispName:"day4_1", img:"4_1.jpg",desc:"Zim's Icecream Parlour Logo"},
-                {dispName:"day4_2", img:"4_2.jpg",desc:"Zim's Icecream Parlour Logo #2"},
-                {dispName:"day5", img:"5.jpg",desc:"The Laser Saloon Logo"},
-                {dispName:"day6", img:"6.jpg",desc:"The Silent Velcro Logo"},
-                {dispName:"day8", img:"8.jpg",desc:"Ken's Candy shop Logo"},
-                {dispName:"day9", img:"9.jpg",desc:"Grass Fuel"},
-                {dispName:"", img:"",desc:""}//leave extra empty elem
-                ];
-    for(var item = 0; item < design66.length-1; item++ )
+    /*for(var item = design66.length-1; item >0; item-- )
     {
         design66[item].img = "\img\\\\design\\\\"+design66[item].img;
     }
-    for(var item = 0; item < design66.length-1; item++ )
+    for(var item = design66.length-1; item >0; item-- )
     {
-        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item+1].dispName+'\',\''+design66[item+1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+design66[item].desc+'</div></div></div></div>';
+        ele = '<div class="item hide '+design66[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+design66[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+design66[item].dispName+'\',\''+design66[item-1].dispName+'\',\''+design66[item-1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+design66[item].desc+'</div></div></div></div>';
         $('.designItems').append(ele);
     }
-    LoadImage(design66[0].dispName,design66[0].dispName,design66[0].img);
+    LoadImage(design66[design66.length-1].dispName,design66[design66.length-1].dispName,design66[design66.length-1].img);*/
+    var portfolioJsonNames = [design,photograph];
+    initImages(portfolioJsonNames);
     $('.itemContent').unbind("mouseenter").bind("mouseenter",function(event)
             {
                 $(event.target).closest('.itemContent').addClass("highlight");
@@ -81,6 +68,26 @@ $(document).ready(function() {
                 $('.itemContent').not(event.target).removeClass("dull");
             });
 });
+
+function initImages(portfolioJsonNames)
+{
+    for(var i = 0 ;i < portfolioJsonNames.length ; i ++)
+    {
+        curPortfolio = portfolioJsonNames[i].images;
+        classToAppend = portfolioJsonNames[i].classToAppend;
+        for(var item = curPortfolio.length-1; item >0; item-- )
+        {
+            curPortfolio[item].img = "\img\\\\design\\\\"+curPortfolio[item].img;
+        }
+        for(var item = curPortfolio.length-1; item >0; item-- )
+        {
+            ele = '<div class="item hide '+curPortfolio[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+curPortfolio[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+curPortfolio[item].dispName+'\',\''+curPortfolio[item-1].dispName+'\',\''+curPortfolio[item-1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+curPortfolio[item].desc+'</div></div></div></div>';
+            $(classToAppend).append(ele);
+        }
+        LoadImage(curPortfolio[curPortfolio.length-1].dispName,curPortfolio[curPortfolio.length-1].dispName,curPortfolio[curPortfolio.length-1].img);
+    }
+};
+
 var loadingImage = false;
 function LoadImage(ele,imageName,imageFile)
 {
@@ -92,15 +99,16 @@ function LoadImage(ele,imageName,imageFile)
         }
         loadingImage = true;
         
-        if (document.images[imageName].src.indexOf(imageFile)<0)
+        if ((!document.images[imageName]) || document.images[imageName].src.indexOf(imageFile)<0)
         {
+            //document.images[imageName] = {};
             document.images[imageName].src = imageFile;
         }
         loadingImage = false;
-        var className ='.item.'+ele;
-        //$(className).eq(0).css("display","block");
-        dispShow($(className).eq(0));
     }
+    var className ='.item.'+ele;
+        //$(className).eq(0).css("display","block");
+    dispShow($(className).eq(0));
 }
 function dispShow(ele)
 {
