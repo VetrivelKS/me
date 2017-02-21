@@ -1,4 +1,4 @@
-var photograph = { classToAppend : ".photographItems",
+var photographItems = { classToAppend : ".photographItems",
                images        :  [
             {dispName:"", img:"",desc:""},//leave extra empty elem
             {dispName:"day0", img:"0.jpg",desc:"Camera icon"},

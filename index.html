@@ -9,27 +9,27 @@
         <script type="text/javascript" language="javascript" src="json/photograph.json"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
-    <body currentDisp="homePage">
+    <body currentDisp="">
         <div class="navBar show">
-            <div class="navEle navIcon navHome highlight" navTo="homePage">
+            <div class="navEle navIcon navHome" navTo="home">
                 <div class="navIconText">Home</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navEle navIcon navPortfolio" navTo="portCatPage">
+            <div class="navEle navIcon navPortfolio" navTo="portfolio">
                 <div class="navIconText">Portfolio</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navEle navIcon navAbout"  navTo="aboutPage">
+            <div class="navEle navIcon navAbout"  navTo="about">
                 <div class="navIconText">About</div>
                 <div class="navIconImg"></div>
             </div>
-            <div class="navEle navIcon navContact" navTo="contactPage">
+            <div class="navEle navIcon navContact" navTo="contact">
                 <div class="navIconText">Contact</div>
                 <div class="navIconImg"></div>
             </div>
         </div>
         <div class="body_div">
-            <div class="pages homePage show">
+            <div class="pages home hide">
                 <div class="pageCont">
                     <div class="hometop">
                         <div class="homeImageContainer">
@@ -48,13 +48,13 @@
             </div>
             
             <!-- PORTFOLIO  -->
-            <div class="pages portCatPage hide">
+            <div class="pages portfolio hide">
                 <div class="categoryCont">
-                    <div class="navEle categoryItem Design"  navTo="designPage">
+                    <div class="navEle categoryItem navDesign"  navTo="design">
                         <div class="categoryImg designCatImg"></div>
                         <div class="categoryText designCatText">DESIGN</div>
                     </div>
-                    <div class="navEle categoryItem Photography"  navTo="photoPage">
+                    <div class="navEle categoryItem navPhotographs"  navTo="photographs">
                          <div class="categoryImg photoCatImg"></div>
                          <div class="categoryText photoCatText">PHOTOGRAPHS</div>
                     </div>
@@ -63,13 +63,16 @@
             
             
             
-            <div class="pages designPage hide">
+            <div class="pages design hide">
                 <div class="portfolioBg">
                     <div class="itemsCont designItems"></div>
+                    <div class="showMoreCont">
+                        <div class="showMore designShowMore">SHOW MORE...</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="pages photographPage hide">
+            <div class="pages photographs hide">
                 <div class="portfolioBg">
                     <div class="itemsCont photographItems"></div>
                 </div>
@@ -77,7 +80,7 @@
             
             
             
-            <div class="pages aboutPage hide">
+            <div class="pages about hide">
                 <div class="leftCont abtSubCont">
                     <div class="abtImageConatiner">
                         <img class="abtImg" src="img/home.png" width="200px" height="200px"></img>
@@ -141,7 +144,7 @@ who loves getting lost in art and making it.
                 </div>
             </div>
             
-            <div class="pages contactPage hide">
+            <div class="pages contact hide">
                 <div class="contactCont">
                     <div class="leftCont contactInfoCont">
                         <div class="contactInfoHeader">

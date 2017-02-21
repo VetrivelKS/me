@@ -112,11 +112,10 @@ body {
 .pages {
   margin-top: 60px;
   width: 100%;
-  height: calc(100% - 60px);
   position: absolute;
 }
 
-/* line 106, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 .navEle.highlight {
   background-color: white;
   border: 1px solid black;
@@ -129,17 +128,17 @@ body {
   /** Opera **/
 }
 
-/* line 117, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
 .highlight .navIconText, .highlight .categoryText {
   color: black;
 }
 
-/* line 123, ../sass/_home.scss */
+/* line 122, ../sass/_home.scss */
 .pageCont, .homeText, .homeDesc {
   width: 100%;
 }
 
-/* line 127, ../sass/_home.scss */
+/* line 126, ../sass/_home.scss */
 .homeText {
   text-align: center;
   font-size: 5vw;
@@ -147,27 +146,27 @@ body {
   z-index: 10;
 }
 
-/* line 135, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 .homeDesc {
   text-align: center;
   font-size: 3vw;
   color: #000;
 }
 
-/* line 143, ../sass/_home.scss */
+/* line 142, ../sass/_home.scss */
 .subText {
   font-size: 2vw;
   color: #8e8b8b;
 }
 
-/* line 148, ../sass/_home.scss */
+/* line 147, ../sass/_home.scss */
 .homeImageContainer {
   height: 500px;
   width: 500px;
   float: left;
 }
 
-/* line 154, ../sass/_home.scss */
+/* line 153, ../sass/_home.scss */
 .homeImg {
   height: 100%;
   width: 100%;
@@ -196,6 +195,11 @@ body {
   font-size: 4.5vw;
 }
 
+/* line 18, ../sass/_portCat.scss */
+.portCatPage {
+  height: calc(100% - 100px);
+}
+
 /* line 1, ../sass/_portfolio.scss */
 * {
   box-sizing: border-box;
@@ -215,11 +219,6 @@ body.designPage ::-webkit-scrollbar {
 }
 
 /* line 19, ../sass/_portfolio.scss */
-.itemsCont {
-  position: absolute;
-}
-
-/* line 25, ../sass/_portfolio.scss */
 .item {
   padding: 0 6px;
   float: left;
@@ -230,19 +229,19 @@ body.designPage ::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 940px) {
-  /* line 34, ../sass/_portfolio.scss */
+  /* line 28, ../sass/_portfolio.scss */
   .item {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 41, ../sass/_portfolio.scss */
+  /* line 35, ../sass/_portfolio.scss */
   .item {
     width: 100%;
   }
 }
-/* line 46, ../sass/_portfolio.scss */
+/* line 40, ../sass/_portfolio.scss */
 .itemContent {
   margin: auto;
   display: table;
@@ -250,7 +249,7 @@ body.designPage ::-webkit-scrollbar {
   height: 250px;
 }
 
-/* line 52, ../sass/_portfolio.scss */
+/* line 46, ../sass/_portfolio.scss */
 .itemImgCont {
   position: absolute;
   margin: auto;
@@ -259,7 +258,7 @@ body.designPage ::-webkit-scrollbar {
   width: 200px;
 }
 
-/* line 60, ../sass/_portfolio.scss */
+/* line 54, ../sass/_portfolio.scss */
 .itemImg {
   width: 200px;
   height: 200px;
@@ -267,26 +266,26 @@ body.designPage ::-webkit-scrollbar {
   border-bottom: 1px solid black;
 }
 
-/* line 67, ../sass/_portfolio.scss */
+/* line 61, ../sass/_portfolio.scss */
 .itemDescCont {
   position: absolute;
   bottom: 15px;
   width: 250px;
 }
 
-/* line 73, ../sass/_portfolio.scss */
+/* line 67, ../sass/_portfolio.scss */
 .itemDesc {
   text-align: center;
   color: black;
   font-weight: 500;
 }
 
-/* line 78, ../sass/_portfolio.scss */
+/* line 72, ../sass/_portfolio.scss */
 .homeImg {
   border-radius: 50%;
 }
 
-/* line 82, ../sass/_portfolio.scss */
+/* line 76, ../sass/_portfolio.scss */
 .itemContent {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(0%);
@@ -298,7 +297,7 @@ body.designPage ::-webkit-scrollbar {
   -o-transition: all 0.5s;
 }
 
-/* line 93, ../sass/_portfolio.scss */
+/* line 87, ../sass/_portfolio.scss */
 .dull {
   opacity: 0.5;
   filter: grayscale(100%);
@@ -307,7 +306,7 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(100%);
 }
 
-/* line 102, ../sass/_portfolio.scss */
+/* line 96, ../sass/_portfolio.scss */
 .highlight {
   box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -315,6 +314,21 @@ body.designPage ::-webkit-scrollbar {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);
+}
+
+/* line 105, ../sass/_portfolio.scss */
+.showMoreCont {
+  width: 100%;
+}
+
+/* line 109, ../sass/_portfolio.scss */
+.showMore {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid black;
 }
 
 /* line 3, ../sass/_about.scss */
