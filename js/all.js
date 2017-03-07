@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    showSlides();
     $(".navEle").click(
         function()
         {
@@ -52,6 +53,18 @@ $(document).ready(function() {
                 loadMore(portfolioJsonNames,event.target);
             });
 });
+var slideIndex = 0;
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 function navigate(isFromInit,toChange)
 {
     if(isFromInit)
@@ -68,10 +81,11 @@ function initImages(portfolioJsonNames)
 {
     $.each(portfolioJsonNames, function(i, item) {
         {
-            end= 0;
+            
             length = portfolioJsonNames[i].images.length-1;
-            start = (length> 12) ? 12 : length;
-            renderUI(portfolioJsonNames[i],start,end);
+            end= length -12;
+            end = end>0 ? end : 0;
+            renderUI(portfolioJsonNames[i],length,end);
         }
     });
 };
@@ -80,9 +94,13 @@ function loadMore(portfolioJsonNames,ele)
     var fromCategory = $(ele).parent().siblings()[0].className.split(" ")[1];
     var alreadyLoaded = $("."+fromCategory+" .item").length;
     var totalImages = portfolioJsonNames[fromCategory].images.length-1;
-    var toLoad = alreadyLoaded + 12;
-    start = (totalImages > toLoad ) ? toLoad : totalImages;
-    renderUI(portfolioJsonNames[fromCategory],start,alreadyLoaded);
+    var start = totalImages - alreadyLoaded;
+    var end = start - 12;
+    end = (end > 0)? end : 0;
+    renderUI(portfolioJsonNames[fromCategory],start,end);
+    $('html,body').animate({
+        scrollTop: $(window).scrollTop() + ($(window).height() - 50)
+    },1000);
 };
 function renderUI(portfolioJsonNames,start,end)
 {
@@ -99,7 +117,7 @@ function renderUI(portfolioJsonNames,start,end)
     }
     LoadImage(curPortfolio[start].dispName,curPortfolio[start].dispName,curPortfolio[start].img);
     
-    if(curPortfolio.length-1 == start)
+    if(end == 0)
     {
         $(classToAppend).siblings().addClass("hide");//to hide load more
     }
