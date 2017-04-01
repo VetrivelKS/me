@@ -490,22 +490,62 @@ ul {
 }
 
 /* line 1, ../sass/contact.scss */
-.contactInfoCont {
-  width: 50%;
-  float: left;
+.contactCont {
+  margin: 10px;
+  color: #8a8e96;
 }
 
 /* line 6, ../sass/contact.scss */
+.contactForm {
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+/* line 11, ../sass/contact.scss */
+.topLabVal {
+  width: 100%;
+  float: left;
+}
+/* line 16, ../sass/contact.scss */
+.topLabVal .labValPair {
+  width: calc(50% - 10px);
+  margin: 5px;
+  float: left;
+}
+
+/* line 23, ../sass/contact.scss */
+.input, .inputMsg {
+  width: calc(100% - 10px);
+  margin: 5px;
+}
+
+/* line 28, ../sass/contact.scss */
 .submitButton {
   border: solid 1px black;
   height: 40px;
-  width: 65px;
-  margin-top: 10px;
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
   padding: 10px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
-/* line 15, ../sass/contact.scss */
-.inputMsg {
-  width: 95%;
+/* line 40, ../sass/contact.scss */
+.contactInfoLeft, .contactInfoRight {
+  width: calc(50% - 10px);
+  margin: 5px;
+  float: left;
+}
+
+/* line 48, ../sass/contact.scss */
+.contactInfoRight li, .contactInfoRight ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 54, ../sass/contact.scss */
+.formHeader, .contactInfoHeader, .submitButton {
+  font-weight: 700;
 }
