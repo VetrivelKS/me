@@ -69,10 +69,6 @@ body.designPage
     color: black;
     font-weight: 500;
 }
-.homeImg
-{
-    border-radius: 50%;
-}
 .itemContent
 {
      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
@@ -93,7 +89,7 @@ body.designPage
     -o-filter: grayscale(100%);
 
 }
-.highlight
+.itemContent.highlight
 {
     box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
     opacity: 1;

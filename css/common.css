@@ -1,22 +1,29 @@
 /* line 1, ../sass/_home.scss */
 * {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 800;
 }
 
-/* line 13, ../sass/_home.scss */
+/* line 12, ../sass/_home.scss */
 body {
-  width: 100%;
-  margin: 0px;
+  width: 1024px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  margin: auto;
 }
 
-/* line 18, ../sass/_home.scss */
+/* line 20, ../sass/_home.scss */
+.home {
+  overflow: hidden;
+}
+
+/* line 24, ../sass/_home.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 22, ../sass/_home.scss */
+/* line 28, ../sass/_home.scss */
 .show {
   visibility: visible;
   opacity: 1;
@@ -29,7 +36,7 @@ body {
   /** Opera **/
 }
 
-/* line 31, ../sass/_home.scss */
+/* line 37, ../sass/_home.scss */
 .hide {
   visibility: hidden;
   opacity: 0;
@@ -43,7 +50,7 @@ body {
   /** Opera **/
 }
 
-/* line 41, ../sass/_home.scss */
+/* line 47, ../sass/_home.scss */
 .navBar {
   margin: 10px 0px;
   position: fixed;
@@ -52,7 +59,6 @@ body {
   top: 0px;
   left: 0px;
   background-color: #fff;
-  border-bottom: 1px solid black;
 }
 
 /*body.home
@@ -63,9 +69,10 @@ body {
     -moz-transition: background-color 2s ease-in-out;
     -o-transition: background-color 2s ease-in-out;
 }*/
-/* line 60, ../sass/_home.scss */
+/* line 66, ../sass/_home.scss */
 .navBar {
   position: absolute;
+  height: 56px;
   transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
   /** Chrome & Safari **/
@@ -75,102 +82,131 @@ body {
   /** Opera **/
 }
 
-/* line 68, ../sass/_home.scss */
-.navIconsContainer {
-  position: relative;
-  width: 800px;
-  top: 0px;
-  right: 0px;
+/*
+.navIconsContainer
+{
+    position: relative;
+    width: 800px;
+    top: 0px; 
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 9;
+}*/
+/* line 87, ../sass/_home.scss */
+.navEleCont {
+  position: absolute;
   bottom: 0px;
-  left: 0px;
-  margin: auto;
-  z-index: 9;
+  right: 0px;
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 93, ../sass/_home.scss */
 .navIcon {
-  position: relative;
   float: left;
-  width: 10%;
-  height: 30px;
   box-sizing: border-box;
-  margin: 0px 7%;
-  background-color: black;
+  margin-left: 20px;
   z-index: 9;
   cursor: pointer;
 }
 
-/* line 92, ../sass/_home.scss */
+/* line 106, ../sass/_home.scss */
 .navIconText {
+  font-size: 16px;
   position: relative;
-  top: 20%;
   text-align: center;
-  color: white;
+  color: grey;
 }
 
-/* line 99, ../sass/_home.scss */
+/* line 114, ../sass/_home.scss */
 .pages {
   margin-top: 60px;
   width: 100%;
   position: absolute;
 }
 
-/* line 105, ../sass/_home.scss */
+/* line 120, ../sass/_home.scss */
 .navEle.highlight {
-  background-color: white;
-  border: 1px solid black;
-  transition: all 1000ms ease-in-out;
-  -webkit-transition: all 1000ms ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 1000ms ease-in-out;
-  /** Firefox **/
-  -o-transition: all 1000ms ease-in-out;
-  /** Opera **/
-}
-
-/* line 116, ../sass/_home.scss */
-.highlight .navIconText, .highlight .categoryText {
   color: black;
 }
 
-/* line 122, ../sass/_home.scss */
-.pageCont, .homeText, .homeDesc {
-  width: 100%;
+/* line 135, ../sass/_home.scss */
+.highlight .navIconText {
+  color: black;
 }
 
-/* line 126, ../sass/_home.scss */
-.homeText {
+/* line 140, ../sass/_home.scss */
+.homeTextContainer {
   text-align: center;
-  font-size: 5vw;
-  color: #000;
+  position: absolute;
+  right: 0px;
+  top: 100px;
   z-index: 10;
 }
 
-/* line 134, ../sass/_home.scss */
+/* line 148, ../sass/_home.scss */
+.homeText {
+  font-size: 72px;
+  color: #000;
+  font-weight: 800;
+}
+
+/* line 155, ../sass/_home.scss */
+.homeDescContainer {
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+/* line 160, ../sass/_home.scss */
 .homeDesc {
   text-align: center;
-  font-size: 3vw;
-  color: #000;
+  font-size: 16px;
+  color: #807979;
 }
 
-/* line 142, ../sass/_home.scss */
+/* line 168, ../sass/_home.scss */
 .subText {
-  font-size: 2vw;
+  font-size: 24px;
   color: #8e8b8b;
+  margin-top: 34px;
 }
 
-/* line 147, ../sass/_home.scss */
+/* line 174, ../sass/_home.scss */
 .homeImageContainer {
-  height: 500px;
-  width: 500px;
+  height: 670px;
+  width: 520px;
   float: left;
 }
 
-/* line 153, ../sass/_home.scss */
+/* line 180, ../sass/_home.scss */
 .homeImg {
   height: 100%;
   width: 100%;
-  box-shadow: 2px 22px 50px -13px;
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 194, ../sass/_home.scss */
+.homeImg.disp {
+  display: block;
+}
+
+/* line 198, ../sass/_home.scss */
+.photographerSub.colorify {
+  color: #f4000e;
+}
+
+/* line 202, ../sass/_home.scss */
+.designerSub.colorify {
+  color: #10d1ea;
+}
+
+/* line 206, ../sass/_home.scss */
+.developerSub.colorify {
+  color: #00dc0e;
 }
 
 /* line 1, ../sass/_portCat.scss */
@@ -278,11 +314,6 @@ body.designPage ::-webkit-scrollbar {
 }
 
 /* line 72, ../sass/_portfolio.scss */
-.homeImg {
-  border-radius: 50%;
-}
-
-/* line 76, ../sass/_portfolio.scss */
 .itemContent {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(0%);
@@ -294,7 +325,7 @@ body.designPage ::-webkit-scrollbar {
   -o-transition: all 0.5s;
 }
 
-/* line 87, ../sass/_portfolio.scss */
+/* line 83, ../sass/_portfolio.scss */
 .dull {
   opacity: 0.5;
   filter: grayscale(100%);
@@ -303,8 +334,8 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(100%);
 }
 
-/* line 96, ../sass/_portfolio.scss */
-.highlight {
+/* line 92, ../sass/_portfolio.scss */
+.itemContent.highlight {
   box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
   filter: grayscale(0%);
@@ -313,12 +344,12 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(0%);
 }
 
-/* line 105, ../sass/_portfolio.scss */
+/* line 101, ../sass/_portfolio.scss */
 .showMoreCont {
   width: 100%;
 }
 
-/* line 109, ../sass/_portfolio.scss */
+/* line 105, ../sass/_portfolio.scss */
 .showMore {
   height: 50px;
   width: 200px;

@@ -10,10 +10,10 @@ $(document).ready(function() {
         {
             $(this).siblings().removeClass("highlight");
             $(this).addClass("highlight");
-            $("body").removeClass("home").addClass("portCat");
+            //$("body").removeClass("home").addClass("portCat");
             if(currentDisp)
             {
-                $("body").removeClass(currentDisp).removeClass(currentDisp).addClass(toDisplay);
+                $("body").removeClass(currentDisp).addClass(toDisplay);
                 $("."+currentDisp).removeClass("show").addClass("hide");
             }
             $("."+toDisplay).removeClass("hide").addClass("show");
@@ -56,13 +56,19 @@ $(document).ready(function() {
 var slideIndex = 0;
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = $(".mySlides");
+    var desc = $(".subDesc");
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        $(slides[i]).removeClass("disp"); 
+        $(desc[i]).removeClass("colorify");
     }
     slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
+    if (slideIndex> slides.length)
+    {
+        slideIndex = 1;
+    } 
+    $(slides[slideIndex-1]).addClass("disp");
+    $(desc[slideIndex-1]).addClass("colorify");
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 function navigate(isFromInit,toChange)
