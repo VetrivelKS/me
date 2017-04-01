@@ -142,14 +142,14 @@ body {
   position: absolute;
   right: 0px;
   top: 200px;
-  color: #bcc3d1;
   z-index: 10;
 }
 
-/* line 150, ../sass/_home.scss */
+/* line 149, ../sass/_home.scss */
 .homeText {
   font-size: 72px;
   font-weight: 800;
+  color: #b4b9c4;
 }
 
 /* line 156, ../sass/_home.scss */
@@ -312,7 +312,7 @@ body.designPage ::-webkit-scrollbar {
 /* line 68, ../sass/_portfolio.scss */
 .itemDesc {
   text-align: center;
-  color: black;
+  color: #787c8a;
   font-weight: 500;
 }
 
@@ -367,7 +367,7 @@ body.designPage ::-webkit-scrollbar {
 }
 
 /* line 1, ../sass/_about.scss */
-.aboutTopCont {
+.aboutTopCont, .aboutDetails, .aboutSkills {
   width: 100%;
   float: left;
 }
@@ -396,7 +396,7 @@ body.designPage ::-webkit-scrollbar {
 /* line 24, ../sass/_about.scss */
 .aboutTextCont {
   text-align: right;
-  color: #bcc3d1;
+  color: #8a8e96;
 }
 
 /* line 29, ../sass/_about.scss */
@@ -449,15 +449,44 @@ ul {
 .detailHeader {
   font-weight: 800;
   font-size: 18px;
-  color: #bcc3d1;
+  color: #8a8e96;
 }
 
 /* line 76, ../sass/_about.scss */
-.detailList {
+.detailList, .aboutSub {
   text-align: center;
   font-size: 14px;
   float: left;
-  color: #bcc3d1;
+  color: #8a8e96;
+}
+
+/* line 84, ../sass/_about.scss */
+.aboutSub {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+/* line 91, ../sass/_about.scss */
+.desAboutSub, .photoAboutSub {
+  border-right: 1px solid #10d1ea;
+}
+
+/* line 96, ../sass/_about.scss */
+.aboutSub1 {
+  font-weight: 600;
+}
+
+/* line 101, ../sass/_about.scss */
+.abtIcn {
+  max-height: 75px;
+  width: auto;
+  margin: 10px;
+}
+
+/* line 109, ../sass/_about.scss */
+.devAboutSub .abtIcn {
+  margin: 10px 0px 0px 10px;
 }
 
 /* line 1, ../sass/contact.scss */

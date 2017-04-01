@@ -1,4 +1,4 @@
-.aboutTopCont
+.aboutTopCont,.aboutDetails,.aboutSkills
 {
     width: 100%;
     float: left;
@@ -24,7 +24,7 @@
 .aboutTextCont
 {
     text-align: right;
-    color: #bcc3d1;
+    color: #8a8e96;
 }
 .aboutName
 {
@@ -71,12 +71,43 @@ ul
 {
     font-weight: 800;
     font-size: 18px;
-    color: #bcc3d1;
+    color: #8a8e96;
 }
-.detailList
+.detailList,.aboutSub
 {
     text-align: center;
     font-size: 14px;
     float: left;
-    color: #bcc3d1;
+    color: #8a8e96;
+}
+
+.aboutSub
+{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.desAboutSub,.photoAboutSub
+{
+    border-right: 1px solid #10d1ea;
+}
+
+.aboutSub1
+{
+    font-weight: 600;
+}
+
+.abtIcn
+{
+    max-height: 75px;
+    width: auto;
+    margin: 10px;
+}
+.devAboutSub
+{
+    .abtIcn
+    {
+        margin: 10px 0px 0px 10px;
+    }
 }
