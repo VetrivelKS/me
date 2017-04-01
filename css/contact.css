@@ -1,6 +1,6 @@
 /* line 1, ../sass/contact.scss */
 .contactCont {
-  margin: 10px;
+  margin-left: 10px;
   color: #8a8e96;
 }
 
@@ -30,31 +30,50 @@
 
 /* line 28, ../sass/contact.scss */
 .submitButton {
-  border: solid 1px black;
   height: 40px;
   width: 150px;
   margin: 10px auto;
   text-align: center;
   padding: 10px;
   cursor: pointer;
-  background-color: black;
+  background-color: #10d1ea;
   color: white;
 }
 
-/* line 40, ../sass/contact.scss */
+/* line 39, ../sass/contact.scss */
 .contactInfoLeft, .contactInfoRight {
-  width: calc(50% - 10px);
-  margin: 5px;
+  width: calc(50% - 50px);
+  margin: 25px;
   float: left;
 }
 
-/* line 48, ../sass/contact.scss */
+/* line 47, ../sass/contact.scss */
 .contactInfoRight li, .contactInfoRight ul {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 54, ../sass/contact.scss */
+/* line 53, ../sass/contact.scss */
 .formHeader, .contactInfoHeader, .submitButton {
   font-weight: 700;
+}
+
+/* line 58, ../sass/contact.scss */
+a {
+  color: #10d1ea;
+}
+
+/* line 62, ../sass/contact.scss */
+.addressText {
+  margin-left: 10px;
+}
+
+/* line 66, ../sass/contact.scss */
+.subContact {
+  margin-bottom: 10px;
+}
+
+/* line 70, ../sass/contact.scss */
+.contactInfoCont {
+  margin-top: 25px;
 }

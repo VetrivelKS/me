@@ -1,6 +1,6 @@
 .contactCont
 {
-    margin: 10px;
+    margin-left: 10px;
     color: #8a8e96;
 }
 .contactForm
@@ -27,20 +27,19 @@
 }
 .submitButton
 {
-    border: solid 1px black;
     height: 40px;
     width: 150px;
     margin: 10px auto;
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: #10d1ea;
     color: white;
 }
 .contactInfoLeft,.contactInfoRight
 {
-    width: calc(50% - 10px);
-    margin: 5px;
+    width: calc(50% - 50px);
+    margin: 25px;
     float: left;
 }
 .contactInfoRight
@@ -54,4 +53,21 @@
 .formHeader,.contactInfoHeader,.submitButton
 {
     font-weight: 700;
+}
+
+a
+{
+    color: #10d1ea;
+}
+.addressText
+{
+    margin-left: 10px;
+}
+.subContact
+{
+    margin-bottom: 10px;
+}
+.contactInfoCont
+{
+    margin-top: 25px;
 }
