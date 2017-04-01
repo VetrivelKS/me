@@ -116,7 +116,7 @@ body {
   font-size: 16px;
   position: relative;
   text-align: center;
-  color: grey;
+  color: #c9ced8;
 }
 
 /* line 115, ../sass/_home.scss */
@@ -141,14 +141,14 @@ body {
   text-align: center;
   position: absolute;
   right: 0px;
-  top: 100px;
+  top: 200px;
+  color: #bcc3d1;
   z-index: 10;
 }
 
-/* line 149, ../sass/_home.scss */
+/* line 150, ../sass/_home.scss */
 .homeText {
   font-size: 72px;
-  color: #000;
   font-weight: 800;
 }
 
@@ -162,13 +162,13 @@ body {
 .homeDesc {
   text-align: center;
   font-size: 16px;
-  color: #807979;
+  color: #c9ced8;
 }
 
 /* line 169, ../sass/_home.scss */
 .subText {
   font-size: 24px;
-  color: #8e8b8b;
+  color: #c9ced8;
   margin-top: 34px;
 }
 
@@ -396,7 +396,7 @@ body.designPage ::-webkit-scrollbar {
 /* line 24, ../sass/_about.scss */
 .aboutTextCont {
   text-align: right;
-  color: grey;
+  color: #c9ced8;
 }
 
 /* line 29, ../sass/_about.scss */
@@ -440,23 +440,24 @@ ul {
 
 /* line 64, ../sass/_about.scss */
 .detailSub {
-  width: 50%;
+  width: calc(50% - 20px);
+  margin: 0px 10px;
   float: left;
 }
 
-/* line 69, ../sass/_about.scss */
+/* line 70, ../sass/_about.scss */
 .detailHeader {
   font-weight: 800;
   font-size: 18px;
-  color: grey;
+  color: #c9ced8;
 }
 
-/* line 75, ../sass/_about.scss */
+/* line 76, ../sass/_about.scss */
 .detailList {
   text-align: center;
   font-size: 14px;
   float: left;
-  color: grey;
+  color: #c9ced8;
 }
 
 /* line 1, ../sass/contact.scss */
