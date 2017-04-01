@@ -38,6 +38,10 @@ $(document).ready(function() {
     LoadImage(design66[design66.length-1].dispName,design66[design66.length-1].dispName,design66[design66.length-1].img);*/
     var portfolioJsonNames = { "designItems" : designItems ,"photographItems" : photographItems};
     initImages(portfolioJsonNames);
+    registerEvents(portfolioJsonNames);
+});
+function registerEvents(portfolioJsonNames)
+{
     $('.itemContent').unbind("mouseenter").bind("mouseenter",function(event)
             {
                 $(event.target).closest('.itemContent').addClass("highlight");
@@ -51,8 +55,8 @@ $(document).ready(function() {
     $('.showMore').unbind("click").bind("click",function(event)
             {
                 loadMore(portfolioJsonNames,event.target);
-            });
-});
+            });    
+}
 var slideIndex = 0;
 function showSlides() {
     var i;
@@ -118,7 +122,7 @@ function renderUI(portfolioJsonNames,start,end)
     }
     for(var item = start; item >end; item-- )
     {
-        ele = '<div class="item hide '+curPortfolio[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+curPortfolio[item].dispName+'" src="" width="200px" height="200px" onLoad="LoadImage(\''+curPortfolio[item].dispName+'\',\''+curPortfolio[item-1].dispName+'\',\''+curPortfolio[item-1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+curPortfolio[item].desc+'</div></div></div></div>';
+        ele = '<div class="item hide '+curPortfolio[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+curPortfolio[item].dispName+'" src="" onLoad="LoadImage(\''+curPortfolio[item].dispName+'\',\''+curPortfolio[item-1].dispName+'\',\''+curPortfolio[item-1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+curPortfolio[item].desc+'</div></div></div></div>';
         $(classToAppend).append(ele);
     }
     LoadImage(curPortfolio[start].dispName,curPortfolio[start].dispName,curPortfolio[start].img);
@@ -127,7 +131,7 @@ function renderUI(portfolioJsonNames,start,end)
     {
         $(classToAppend).siblings().addClass("hide");//to hide load more
     }
-    
+    registerEvents(portfolioJsonNames);
 };
 var loadingImage = false;
 function LoadImage(ele,imageName,imageFile)

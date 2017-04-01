@@ -40,29 +40,26 @@ body.designPage
 .itemContent{
     margin: auto;
     display: table;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 240px;
 }
 .itemImgCont
 {
-    position:absolute;
     margin: auto;
     left: 0px;
     right: 0px;
     width: 200px;
+    border-bottom: 1px solid black;
 }
 .itemImg
 {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border-bottom: 1px solid black;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
 }
 .itemDescCont
 {
-    position: absolute;
-    bottom: 15px;
-    width: 250px;
+    margin-top: 8px;
 }
 .itemDesc {
     text-align: center;
@@ -101,11 +98,15 @@ body.designPage
 .showMoreCont
 {
     width: 100%;
+    position: absolute;
+    bottom: -100px;
+    margin-bottom: 30px;
 }
 .showMore
 {
     height: 50px;
     width: 200px;
+    line-height: 30px;
     text-align: center;
     padding: 10px;
     margin: auto;
