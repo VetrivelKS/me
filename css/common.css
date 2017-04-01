@@ -39,6 +39,7 @@ body {
 /* line 37, ../sass/_home.scss */
 .hide {
   visibility: hidden;
+  display: none;
   opacity: 0;
   pointer-events: none;
   transition: all 1000ms ease-in-out;
@@ -50,7 +51,7 @@ body {
   /** Opera **/
 }
 
-/* line 47, ../sass/_home.scss */
+/* line 48, ../sass/_home.scss */
 .navBar {
   margin: 10px 0px;
   position: fixed;
@@ -69,7 +70,7 @@ body {
     -moz-transition: background-color 2s ease-in-out;
     -o-transition: background-color 2s ease-in-out;
 }*/
-/* line 66, ../sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 .navBar {
   position: absolute;
   height: 56px;
@@ -94,14 +95,14 @@ body {
     margin: auto;
     z-index: 9;
 }*/
-/* line 87, ../sass/_home.scss */
+/* line 88, ../sass/_home.scss */
 .navEleCont {
   position: absolute;
   bottom: 0px;
   right: 0px;
 }
 
-/* line 93, ../sass/_home.scss */
+/* line 94, ../sass/_home.scss */
 .navIcon {
   float: left;
   box-sizing: border-box;
@@ -110,7 +111,7 @@ body {
   cursor: pointer;
 }
 
-/* line 106, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 .navIconText {
   font-size: 16px;
   position: relative;
@@ -118,11 +119,10 @@ body {
   color: grey;
 }
 
-/* line 114, ../sass/_home.scss */
+/* line 115, ../sass/_home.scss */
 .pages {
-  margin-top: 60px;
+  margin-top: 76px;
   width: 100%;
-  position: absolute;
 }
 
 /* line 120, ../sass/_home.scss */
@@ -262,20 +262,25 @@ body.designPage ::-webkit-scrollbar {
   margin-top: 45px;
 }
 
+/* line 27, ../sass/_portfolio.scss */
+.pages.portfolio {
+  height: calc(100vh - 76px);
+}
+
 @media only screen and (max-width: 940px) {
-  /* line 28, ../sass/_portfolio.scss */
+  /* line 32, ../sass/_portfolio.scss */
   .item {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 35, ../sass/_portfolio.scss */
+  /* line 39, ../sass/_portfolio.scss */
   .item {
     width: 100%;
   }
 }
-/* line 40, ../sass/_portfolio.scss */
+/* line 44, ../sass/_portfolio.scss */
 .itemContent {
   margin: auto;
   display: table;
@@ -283,7 +288,7 @@ body.designPage ::-webkit-scrollbar {
   height: 240px;
 }
 
-/* line 46, ../sass/_portfolio.scss */
+/* line 50, ../sass/_portfolio.scss */
 .itemImgCont {
   margin: auto;
   left: 0px;
@@ -292,26 +297,26 @@ body.designPage ::-webkit-scrollbar {
   border-bottom: 1px solid black;
 }
 
-/* line 54, ../sass/_portfolio.scss */
+/* line 58, ../sass/_portfolio.scss */
 .itemImg {
   width: 180px;
   height: 180px;
   margin: 10px;
 }
 
-/* line 60, ../sass/_portfolio.scss */
+/* line 64, ../sass/_portfolio.scss */
 .itemDescCont {
   margin-top: 8px;
 }
 
-/* line 64, ../sass/_portfolio.scss */
+/* line 68, ../sass/_portfolio.scss */
 .itemDesc {
   text-align: center;
   color: black;
   font-weight: 500;
 }
 
-/* line 69, ../sass/_portfolio.scss */
+/* line 73, ../sass/_portfolio.scss */
 .itemContent {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(0%);
@@ -323,7 +328,7 @@ body.designPage ::-webkit-scrollbar {
   -o-transition: all 0.5s;
 }
 
-/* line 80, ../sass/_portfolio.scss */
+/* line 84, ../sass/_portfolio.scss */
 .dull {
   opacity: 0.5;
   filter: grayscale(100%);
@@ -332,7 +337,7 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(100%);
 }
 
-/* line 89, ../sass/_portfolio.scss */
+/* line 93, ../sass/_portfolio.scss */
 .itemContent.highlight {
   box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -342,7 +347,7 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(0%);
 }
 
-/* line 98, ../sass/_portfolio.scss */
+/* line 102, ../sass/_portfolio.scss */
 .showMoreCont {
   width: 100%;
   position: absolute;
@@ -350,7 +355,7 @@ body.designPage ::-webkit-scrollbar {
   margin-bottom: 30px;
 }
 
-/* line 105, ../sass/_portfolio.scss */
+/* line 109, ../sass/_portfolio.scss */
 .showMore {
   height: 50px;
   width: 200px;
@@ -361,49 +366,97 @@ body.designPage ::-webkit-scrollbar {
   border: 1px solid black;
 }
 
-/* line 3, ../sass/_about.scss */
-.aboutPage .leftCont {
+/* line 1, ../sass/_about.scss */
+.aboutTopCont {
+  width: 100%;
   float: left;
-  width: 200px;
 }
-/* line 8, ../sass/_about.scss */
-.aboutPage .rightCont {
+
+/* line 6, ../sass/_about.scss */
+.aboutTopRight, .aboutTopLeft {
   float: right;
-  width: calc(100% - 200px);
+}
+
+/* line 10, ../sass/_about.scss */
+.aboutTopLeft {
+  margin-top: 50px;
 }
 
 /* line 14, ../sass/_about.scss */
-.mainTextCont {
-  margin-top: 40px;
-  padding: 10px;
+.aboutImgCont {
+  margin: 10px;
 }
 
-/* line 19, ../sass/_about.scss */
-.mainText {
-  font-size: 3vw;
+/* line 18, ../sass/_about.scss */
+.abtImg {
+  width: 226px;
+  height: 287px;
 }
 
-/* line 23, ../sass/_about.scss */
-.listCont {
-  margin-top: 20px;
-  width: 270px;
-  height: 200px;
-  box-shadow: 7px 9px 36px -8px;
-  margin: 50px;
-  padding: 10px;
+/* line 24, ../sass/_about.scss */
+.aboutTextCont {
+  text-align: right;
+  color: grey;
 }
 
-/* line 32, ../sass/_about.scss */
-.listSplitCont {
+/* line 29, ../sass/_about.scss */
+.aboutName {
+  font-weight: 600;
+  font-size: 30px;
+  color: #10d1ea;
+}
+
+/* line 35, ../sass/_about.scss */
+.aboutDesc {
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* line 41, ../sass/_about.scss */
+.descHighlight {
+  color: #10d1ea;
+}
+
+/* line 46, ../sass/_about.scss */
+.downloadResumeBtn {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  width: 200px;
+  height: 25px;
+  color: white;
+  background-color: #10d1ea;
+  float: right;
+  margin-top: 15px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+/* line 60, ../sass/_about.scss */
+ul {
+  list-style: none;
+}
+
+/* line 64, ../sass/_about.scss */
+.detailSub {
   width: 50%;
   float: left;
 }
 
-/* line 37, ../sass/_about.scss */
-.liHeaderText {
+/* line 69, ../sass/_about.scss */
+.detailHeader {
+  font-weight: 800;
+  font-size: 18px;
+  color: grey;
+}
+
+/* line 75, ../sass/_about.scss */
+.detailList {
   text-align: center;
-  padding-bottom: 11px;
-  border-bottom: 1px solid;
+  font-size: 14px;
+  float: left;
+  color: grey;
 }
 
 /* line 1, ../sass/contact.scss */

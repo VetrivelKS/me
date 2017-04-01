@@ -37,6 +37,7 @@ body
 .hide
 {
     visibility: hidden;
+    display: none;
     opacity: 0;
     pointer-events: none;
     transition: all 1000ms ease-in-out;
@@ -113,9 +114,8 @@ body
 }
 .pages
 {
-    margin-top:60px;
+    margin-top: 76px;
     width: 100%;
-    position: absolute;
 }
 .navEle.highlight
 {

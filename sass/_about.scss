@@ -1,42 +1,81 @@
-.aboutPage 
+.aboutTopCont
 {
-    .leftCont
-    {
-        float: left;
-        width: 200px;
-    }
-    .rightCont
-    {
-        float:right;
-        width: calc(100% - 200px);
-    }
+    width: 100%;
+    float: left;
 }
-.mainTextCont
+.aboutTopRight,.aboutTopLeft
 {
-    margin-top: 40px;
-    padding: 10px
+    float:right;
 }
-.mainText
+.aboutTopLeft
 {
-    font-size: 3vw;
+    margin-top: 50px;
 }
-.listCont
+.aboutImgCont
 {
-    margin-top: 20px;
-    width: 270px;
-    height: 200px;
-    box-shadow: 7px 9px 36px -8px;
-    margin: 50px;
-    padding: 10px;
+    margin: 10px;
 }
-.listSplitCont
+.abtImg
+{
+    width: 226px;
+    height: 287px;
+}
+
+.aboutTextCont
+{
+    text-align: right;
+    color: grey;
+}
+.aboutName
+{
+    font-weight: 600;
+    font-size: 30px;
+    color: #10d1ea;
+}
+.aboutDesc
+{
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.descHighlight
+{
+    color: #10d1ea;
+}
+
+.downloadResumeBtn
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    width: 200px;
+    height: 25px;
+    color: white;
+    background-color: #10d1ea;
+    float: right;
+    margin-top: 15px;
+    line-height: 26px;
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+.detailSub
 {
     width: 50%;
     float: left;
 }
-.liHeaderText
+.detailHeader
+{
+    font-weight: 800;
+    font-size: 18px;
+    color: grey;
+}
+.detailList
 {
     text-align: center;
-    padding-bottom: 11px;
-    border-bottom: 1px solid;
+    font-size: 14px;
+    float: left;
+    color: grey;
 }

@@ -24,6 +24,10 @@ body.designPage
     position: relative;
     margin-top: 45px;
 }
+.pages.portfolio
+{
+    height: calc(100vh - 76px);
+}
 @media only screen and (max-width: 940px){
     .item {
         width: 49.99999%;
