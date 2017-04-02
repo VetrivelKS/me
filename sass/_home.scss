@@ -138,14 +138,6 @@ body
         color : #10d1ea;
     }
 }
-.homeTextContainer
-{
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    top: 200px;
-    z-index: 10;
-}
 .homeText
 {
     font-size: 72px;
@@ -208,8 +200,37 @@ body
 {
     color: #00dc0e;
 }
-
+.homeTextContainer
+{
+    text-align: center;
+}
+@media only screen and (min-device-width : 480px)
+{
+    .homeTextContainer
+    {
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        z-index: 10;
+    }
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
-
+    body
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .homeImageContainer
+    {
+        height:348px;
+        width: 270px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .homeTextContainer
+    {
+       
+    }
 }
