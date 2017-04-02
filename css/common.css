@@ -224,6 +224,16 @@ body {
   }
 
   /* line 225, ../sass/_home.scss */
+  .navIcon {
+    margin-right: 22px;
+  }
+
+  /* line 229, ../sass/_home.scss */
+  .navIconText {
+    font-size: 12px;
+  }
+
+  /* line 233, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 410px;
     max-width: 318px;
@@ -231,17 +241,29 @@ body {
     width: auto;
     position: absolute;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
   }
 
-  /* line 234, ../sass/_home.scss */
+  /* line 245, ../sass/_home.scss */
   .homeTextContainer {
-    margin-top: 10%;
-    left: 11%;
+    margin-top: 20px;
   }
 
-  /* line 239, ../sass/_home.scss */
+  /* line 249, ../sass/_home.scss */
   .homeText {
-    font-size: 36px;
+    font-size: 16px;
+  }
+
+  /* line 253, ../sass/_home.scss */
+  .homeDescContainer {
+    margin-top: 5px;
+  }
+
+  /* line 257, ../sass/_home.scss */
+  .homeDescText {
+    font-size: 12px;
   }
 }
 /* line 1, ../sass/_portCat.scss */
@@ -268,6 +290,12 @@ body {
   height: calc(100% - 100px);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 24, ../sass/_portCat.scss */
+  .categoryText {
+    font-size: 12px;
+  }
+}
 /* line 1, ../sass/_portfolio.scss */
 * {
   box-sizing: border-box;
