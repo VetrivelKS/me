@@ -221,11 +221,9 @@ body {
   body {
     width: 100%;
     height: 100%;
-    max-width: 480px;
-    max-height: 736px;
   }
 
-  /* line 227, ../sass/_home.scss */
+  /* line 225, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 410px;
     max-width: 318px;
@@ -233,6 +231,17 @@ body {
     width: auto;
     position: absolute;
     bottom: 0px;
+  }
+
+  /* line 234, ../sass/_home.scss */
+  .homeTextContainer {
+    margin-top: 10%;
+    left: 11%;
+  }
+
+  /* line 239, ../sass/_home.scss */
+  .homeText {
+    font-size: 36px;
   }
 }
 /* line 1, ../sass/_portCat.scss */

@@ -221,8 +221,6 @@ body
     {
         width: 100%;
         height: 100%;
-        max-width: 480px;
-        max-height: 736px;
     }
     .homeImageContainer
     {
@@ -235,6 +233,11 @@ body
     }
     .homeTextContainer
     {
-       
+        margin-top: 10%;
+        left: 11%;
+    }
+    .homeText
+    {
+       font-size: 36px;
     }
 }
