@@ -221,9 +221,11 @@ body {
   body {
     width: 100%;
     height: 100%;
+    max-width: 480px;
+    max-height: 736px;
   }
 
-  /* line 225, ../sass/_home.scss */
+  /* line 227, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 410px;
     max-width: 318px;
