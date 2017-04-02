@@ -224,8 +224,10 @@ body
     }
     .homeImageContainer
     {
-        height:348px;
-        width: 270px;
+        max-height:410px;
+        max-width: 318px;
+        height: auto;
+        width: auto;
         position: absolute;
         bottom: 0px;
     }
