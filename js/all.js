@@ -10,11 +10,14 @@ $(document).ready(function() {
         {
             $(this).siblings().removeClass("highlight");
             $(this).addClass("highlight");
-            //$("body").removeClass("home").addClass("portCat");
             if(currentDisp)
             {
                 $("body").removeClass(currentDisp).addClass(toDisplay);
                 $("."+currentDisp).removeClass("show").addClass("hide");
+            }
+            else
+            {
+                $("body").addClass(toDisplay);
             }
             $("."+toDisplay).removeClass("hide").addClass("show");
             var hash = window.location.hash.substring(1); 
@@ -55,7 +58,11 @@ function registerEvents(portfolioJsonNames)
     $('.showMore').unbind("click").bind("click",function(event)
             {
                 loadMore(portfolioJsonNames,event.target);
-            });    
+            });
+    $('.backToPortCat').unbind("click").bind("click",function(event)
+            {
+                $(".navPortfolio ").trigger("click");
+            });
 }
 var slideIndex = 0;
 function showSlides() {
