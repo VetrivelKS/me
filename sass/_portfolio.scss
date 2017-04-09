@@ -49,17 +49,23 @@ body.designPage
 }
 .itemImgCont
 {
-    margin: auto;
-    left: 0px;
-    right: 0px;
     width: 200px;
+    height: 200px;
+    position: relative;
     border-bottom: 1px solid black;
+    padding: 10px;
+    margin: auto;
 }
 .itemImg
 {
-    width: 180px;
-    height: 180px;
-    margin: 10px;
+    max-width: 180px;
+    max-height: 180px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
 .itemDescCont
 {
@@ -105,6 +111,8 @@ body.designPage
     position: absolute;
     bottom: -100px;
     margin-bottom: 30px;
+    cursor: pointer;
+    display: none;
 }
 .showMore
 {

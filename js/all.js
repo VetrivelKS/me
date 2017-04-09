@@ -9,7 +9,14 @@ $(document).ready(function() {
         if(toDisplay != currentDisp)
         {
             $(this).siblings().removeClass("highlight");
-            $(this).addClass("highlight");
+            if($(this).hasClass("navIcon"))
+            {
+                $(this,".navIcon ").addClass("highlight");
+            }
+            else
+            {
+                $(".navPortfolio").addClass("highlight");
+            }
             if(currentDisp)
             {
                 $("body").removeClass(currentDisp).addClass(toDisplay);
@@ -102,41 +109,48 @@ function initImages(portfolioJsonNames)
             length = portfolioJsonNames[i].images.length-1;
             end= length -12;
             end = end>0 ? end : 0;
-            renderUI(portfolioJsonNames[i],length,end);
+            renderUI(portfolioJsonNames,portfolioJsonNames[i].classToAppend ,length,end);
         }
     });
 };
 function loadMore(portfolioJsonNames,ele)
 {
-    var fromCategory = $(ele).parent().siblings()[0].className.split(" ")[1];
+    var fromCategory = $(ele).attr("cat");
     var alreadyLoaded = $("."+fromCategory+" .item").length;
     var totalImages = portfolioJsonNames[fromCategory].images.length-1;
     var start = totalImages - alreadyLoaded;
     var end = start - 12;
     end = (end > 0)? end : 0;
-    renderUI(portfolioJsonNames[fromCategory],start,end);
-    $('html,body').animate({
-        scrollTop: $(window).scrollTop() + ($(window).height() - 50)
-    },1000);
+    if(start!= end)
+    {
+        renderUI(portfolioJsonNames,fromCategory,start,end);
+        $('html,body').animate({
+            scrollTop: $(window).scrollTop() + ($(window).height() - 50)
+        },1000);
+    }
 };
-function renderUI(portfolioJsonNames,start,end)
+function renderUI(portfolioJsonNames,fromCategory,start,end)
 {
-    curPortfolio = portfolioJsonNames.images;
-    classToAppend = portfolioJsonNames.classToAppend;
+    curPortfolio = portfolioJsonNames[fromCategory].images;
+    classToAppend = portfolioJsonNames[fromCategory].classToAppend;
     for(var item = start; item >end; item-- )
     {
-        curPortfolio[item].img = "\img\\\\design\\\\"+curPortfolio[item].img;
+        curPortfolio[item].img = "\img\\\\"+classToAppend+"\\\\"+curPortfolio[item].img;
     }
     for(var item = start; item >end; item-- )
     {
         ele = '<div class="item hide '+curPortfolio[item].dispName+'"><div class="itemContent"><div class="itemImgCont"><img class="itemImg" name="'+curPortfolio[item].dispName+'" src="" onLoad="LoadImage(\''+curPortfolio[item].dispName+'\',\''+curPortfolio[item-1].dispName+'\',\''+curPortfolio[item-1].img+'\')"></img></div><div class="itemDescCont"><div class="itemDesc">'+curPortfolio[item].desc+'</div></div></div></div>';
-        $(classToAppend).append(ele);
+        $("."+classToAppend).append(ele);
     }
     LoadImage(curPortfolio[start].dispName,curPortfolio[start].dispName,curPortfolio[start].img);
     
     if(end == 0)
     {
-        $(classToAppend).siblings().addClass("hide");//to hide load more
+        $("."+classToAppend).parents().eq(0).siblings().hide();//to hide load more
+    }
+    else if(start > 12)
+    {
+        $("."+classToAppend).parents().eq(0).siblings().show();
     }
     registerEvents(portfolioJsonNames);
 };
@@ -153,12 +167,14 @@ function LoadImage(ele,imageName,imageFile)
         
         if ((!document.images[imageName]) || document.images[imageName].src.indexOf(imageFile)<0)
         {
-            //document.images[imageName] = {};
-            document.images[imageName].src = imageFile;
+            if(document.images[imageName])
+            {
+                document.images[imageName].src = imageFile;
+            }
         }
         loadingImage = false;
     }
-    var className ='.item.'+ele;
+    var className = ".item."+ele;
         //$(className).eq(0).css("display","block");
     dispShow($(className).eq(0));
 }
