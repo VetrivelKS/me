@@ -5,7 +5,7 @@
 }
 
 /* line 12, ../sass/_home.scss */
-body {
+.bodyCont {
   width: 1024px;
   height: auto;
   left: 0px;
@@ -240,7 +240,7 @@ body {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* line 243, ../sass/_home.scss */
-  body {
+  .bodyCont {
     width: 100%;
     min-height: 100%;
   }
@@ -324,7 +324,7 @@ body {
 }
 
 /* line 4, ../sass/_portfolio.scss */
-body {
+.bodyCont {
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
@@ -369,10 +369,11 @@ body.designPage ::-webkit-scrollbar {
   margin: auto;
   display: table;
   width: 220px;
+  cursor: pointer;
   height: 240px;
 }
 
-/* line 50, ../sass/_portfolio.scss */
+/* line 51, ../sass/_portfolio.scss */
 .itemImgCont {
   width: 200px;
   height: 200px;
@@ -382,7 +383,7 @@ body.designPage ::-webkit-scrollbar {
   margin: auto;
 }
 
-/* line 59, ../sass/_portfolio.scss */
+/* line 60, ../sass/_portfolio.scss */
 .itemImg {
   max-width: 180px;
   max-height: 180px;
@@ -394,19 +395,19 @@ body.designPage ::-webkit-scrollbar {
   left: 0px;
 }
 
-/* line 70, ../sass/_portfolio.scss */
+/* line 71, ../sass/_portfolio.scss */
 .itemDescCont {
   margin-top: 8px;
 }
 
-/* line 74, ../sass/_portfolio.scss */
+/* line 75, ../sass/_portfolio.scss */
 .itemDesc {
   text-align: center;
   color: #787c8a;
   font-weight: 500;
 }
 
-/* line 79, ../sass/_portfolio.scss */
+/* line 80, ../sass/_portfolio.scss */
 .itemContent {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(0%);
@@ -418,7 +419,7 @@ body.designPage ::-webkit-scrollbar {
   -o-transition: all 0.5s;
 }
 
-/* line 90, ../sass/_portfolio.scss */
+/* line 91, ../sass/_portfolio.scss */
 .dull {
   opacity: 0.5;
   filter: grayscale(100%);
@@ -427,7 +428,7 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(100%);
 }
 
-/* line 99, ../sass/_portfolio.scss */
+/* line 100, ../sass/_portfolio.scss */
 .itemContent.highlight {
   box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -437,7 +438,7 @@ body.designPage ::-webkit-scrollbar {
   -o-filter: grayscale(0%);
 }
 
-/* line 108, ../sass/_portfolio.scss */
+/* line 109, ../sass/_portfolio.scss */
 .showMoreCont {
   width: 100%;
   position: absolute;
@@ -447,15 +448,83 @@ body.designPage ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 117, ../sass/_portfolio.scss */
+/* line 118, ../sass/_portfolio.scss */
 .showMore {
-  height: 50px;
+  height: 40px;
   width: 200px;
-  line-height: 30px;
+  line-height: 20px;
   text-align: center;
   padding: 10px;
   margin: auto;
-  border: 1px solid black;
+  box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #787c8a;
+  font-weight: 500;
+}
+
+/* line 132, ../sass/_portfolio.scss */
+.imgFullCont {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.42);
+  z-index: 90;
+}
+
+/* line 143, ../sass/_portfolio.scss */
+.crossicon {
+  float: right;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+/* line 151, ../sass/_portfolio.scss */
+.imgCont {
+  width: 1024px;
+  height: 100vh;
+}
+
+/* line 156, ../sass/_portfolio.scss */
+.imgFull {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  max-height: 500px;
+  max-width: 1024px;
+}
+
+/* line 167, ../sass/_portfolio.scss */
+.imgFull {
+  -webkit-transition: all 1s ease;
+  -webkit-transform: scale(0);
+  -ms-transition: all 1s ease;
+  -ms-transform: scale(0);
+  -moz-transition: all 1s ease;
+  -moz-transform: scale(0);
+  transition: all 1s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* line 179, ../sass/_portfolio.scss */
+.imgFull.loaded {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -webkit-transform: scale(1);
+  -ms-transition: all 1s ease;
+  -ms-transform: scale(1);
+  -moz-transition: all 1s ease;
+  -moz-transform: scale(1);
+  transition: all 1s ease;
+  transform: scale(1);
 }
 
 /* line 1, ../sass/_about.scss */

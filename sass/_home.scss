@@ -9,7 +9,7 @@ ul
 {
   //list-style-type: none;
 }
-body
+.bodyCont
 {
     width: 1024px;
     height: auto;
@@ -240,7 +240,7 @@ body
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
-    body
+    .bodyCont
     {
         width: 100%;
         min-height: 100%;

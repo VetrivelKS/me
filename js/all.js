@@ -68,7 +68,15 @@ function registerEvents(portfolioJsonNames)
             });
     $('.backToPortCat').unbind("click").bind("click",function(event)
             {
-                $(".navPortfolio ").trigger("click");
+        $(".navPortfolio ").trigger("click");
+    });
+    $('.itemContent').unbind("click").bind("click",function(event)
+            {
+                $(".imgFullCont").show();
+            });
+    $('.crossicon').unbind("click").bind("click",function(event)
+            {
+                $(".imgFullCont").hide();
             });
 }
 var slideIndex = 0;
@@ -181,4 +189,8 @@ function LoadImage(ele,imageName,imageFile)
 function dispShow(ele)
 {
     $(ele).removeClass("hide").addClass("show");
+}
+function imgLoaded()
+{
+    $(".imgFull").addClass("loaded");
 }
