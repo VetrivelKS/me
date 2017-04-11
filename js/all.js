@@ -72,11 +72,17 @@ function registerEvents(portfolioJsonNames)
     });
     $('.itemContent').unbind("click").bind("click",function(event)
             {
-                $(".imgFullCont").show();
+                var srcEle = $(event.target).closest(".item").find(".itemImg");
+                var src = $(srcEle).attr("src");
+                src= src.slice(0,-4);
+                var srcImg = src+"_full.jpg";
+                $(".imgFull").attr("src",srcImg);
+                $(".imgFullCont").css("top",$(window).scrollTop()+"px");
+                $(".imgFullCont").fadeIn(1000).show();
             });
     $('.crossicon').unbind("click").bind("click",function(event)
             {
-                $(".imgFullCont").hide();
+                $(".imgFullCont").fadeIn(1000).hide();
             });
 }
 var slideIndex = 0;
