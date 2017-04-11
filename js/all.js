@@ -83,6 +83,7 @@ function registerEvents(portfolioJsonNames)
     $('.crossicon').unbind("click").bind("click",function(event)
             {
                 $(".imgFullCont").fadeIn(1000).hide();
+                $(".imgFull").attr("src","");
             });
 }
 var slideIndex = 0;
