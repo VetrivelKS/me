@@ -161,7 +161,10 @@ body.designPage
     max-height: 500px;
     max-width: 1024px;
 }
-
+.imgFullDummy,.imgFull
+{
+    display: none;
+}
 @media only screen and (min-width: 1024px){
     .imgCont
     {
@@ -181,28 +184,4 @@ body.designPage
         max-height: calc(100% - 20px);
         max-width: calc(100% - 20px);
     }
-}
-.imgFull
-{
-    -webkit-transition: all 1s ease;
-    -webkit-transform: scale(0); 
-    -ms-transition: all 1s ease;
-    -ms-transform: scale(0); 
-    -moz-transition: all 1s ease;
-    -moz-transform: scale(0);
-    transition: all 1s ease;
-    transform: scale(0);   
-    opacity: 0;
-}
-.imgFull.loaded
-{
-    opacity: 1;
-    -webkit-transition: all 1s ease;
-    -webkit-transform: scale(1);
-    -ms-transition: all 1s ease;
-    -ms-transform: scale(1);   
-    -moz-transition: all 1s ease;
-    -moz-transform: scale(1);
-    transition: all 1s ease;
-    transform: scale(1);
 }

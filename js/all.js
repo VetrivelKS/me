@@ -72,18 +72,20 @@ function registerEvents(portfolioJsonNames)
     });
     $('.itemContent').unbind("click").bind("click",function(event)
             {
+                $(".imgFullCont").show();
                 var srcEle = $(event.target).closest(".item").find(".itemImg");
                 var src = $(srcEle).attr("src");
                 src= src.slice(0,-4);
                 var srcImg = src+"_full.jpg";
-                $(".imgFull").attr("src",srcImg);
+                srcImg.replace("//","/");
+                $(".imgFullDummy").attr("src",srcImg);
                 $(".imgFullCont").css("top",$(window).scrollTop()+"px");
-                $(".imgFullCont").fadeIn(1000).show();
             });
-    $('.crossicon').unbind("click").bind("click",function(event)
+    $('.crossicon,.imgFullCont').unbind("click").bind("click",function(event)
             {
-                $(".imgFullCont").fadeIn(1000).hide();
-                $(".imgFull").attr("src","");
+                $(".imgFullCont").fadeOut(500);
+                $(".imgFullDummy").attr("src","");
+                $(".imgFull").attr("src","")
             });
 }
 var slideIndex = 0;
@@ -199,5 +201,6 @@ function dispShow(ele)
 }
 function imgLoaded()
 {
-    $(".imgFull").addClass("loaded");
+    $(".imgFull").attr("src",($(".imgFullDummy").attr("src")));
+    $(".imgFull").fadeIn(3000);
 }

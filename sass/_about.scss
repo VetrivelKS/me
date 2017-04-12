@@ -57,7 +57,7 @@
     color: white;
     background-color: #10d1ea;
     float: right;
-    margin-top: 15px;
+    margin: 15px;
     line-height: 26px;
     cursor: pointer;
 }
@@ -113,5 +113,30 @@ ul
     .abtIcn
     {
         margin: 10px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
+    .aboutTopLeft
+    {
+        margin: 10px;
+    }
+    .aboutName
+    {
+        font-size: 16px;
+    }
+    .detailHeader
+    {
+        font-size: 14px;
+    }
+    .aboutDesc,.downloadResumeBtn,.detailList,.aboutSub
+    {
+        font-size: 12px;
+    }
+    .downloadResumeBtn
+    {
+        width: 135px;
+        margin: 10px;
     }
 }
