@@ -1,14 +1,13 @@
 var designItems = { classToAppend : "designItems",
                images        :  [
             {dispName:"", img:"",desc:""},//leave extra empty elem
-            {dispName:"day0", img:"0.jpg",desc:"Camera icon"},
-            {dispName:"day1", img:"1.jpg",desc:"#1 logo"},
-            {dispName:"day2", img:"2.jpg",desc:"Prestige Sailing School Logo"},
-            {dispName:"day3", img:"3.jpg",desc:"Trip to MOON logo"},
-            {dispName:"day4_1", img:"4_1.jpg",desc:"Zim's Icecream Parlour Logo"},
-            {dispName:"day4_2", img:"4_2.jpg",desc:"Zim's Icecream Parlour Logo #2"},
-            {dispName:"day5", img:"5.jpg",desc:"The Laser Saloon Logo"},
-            {dispName:"day6", img:"6.jpg",desc:"The Silent Velcro Logo"},
-            {dispName:"day8", img:"8.jpg",desc:"Ken's Candy shop Logo"},
-            {dispName:"day9", img:"9.jpg",desc:"Grass Fuel"},
+            {dispName:"d1", img:"0_full_thumb.JPG",desc:"Camera icon"},
+            {dispName:"d2", img:"1_full_thumb.JPG",desc:"#1 day1 trial"},
+            {dispName:"d3", img:"2_full_thumb.JPG",desc:"Prestige Sailing School Logo"},
+            {dispName:"d4", img:"3_full_thumb.JPG",desc:"Trip to MOON logo"},
+            {dispName:"d5", img:"4_1_full_thumb.JPG",desc:"Zim's Icecream Parlour Logo"},
+            {dispName:"d6", img:"4_2_full_thumb.JPG",desc:"Zim's Icecream Parlour Logo #2"},
+            {dispName:"d7", img:"5_full_thumb.JPG",desc:"The Laser Saloon Logo"},
+            {dispName:"d8", img:"6_full_thumb.JPG",desc:"The Silent Velcro Logo"},
+            {dispName:"d9", img:"8_full_thumb.JPG",desc:"Ken's Candy shop Logo"},
             ]};

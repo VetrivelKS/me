@@ -54,14 +54,18 @@
 {
     font-weight: 700;
 }
-
+.formHeaderSubTxt
+{
+    font-weight: 300;
+    font-size: 12px;
+}
 a
 {
     color: #10d1ea;
 }
 .addressText
 {
-    margin-left: 10px;
+    margin-left:20px;
 }
 .subContact
 {
@@ -70,4 +74,18 @@ a
 .contactInfoCont
 {
     margin-top: 25px;
+}
+.contactForm
+{
+    pointer-events: none;
+    opacity: 0.4;
+}
+@media only screen and (max-width: 500px){
+    .contactInfoLeft,.contactInfoRight
+    {
+        width: calc(100% - 50px);
+        margin: 0px;
+        margin-left: 25px;
+    }
+    
 }

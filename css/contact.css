@@ -58,22 +58,43 @@
   font-weight: 700;
 }
 
-/* line 58, ../sass/contact.scss */
+/* line 57, ../sass/contact.scss */
+.formHeaderSubTxt {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* line 62, ../sass/contact.scss */
 a {
   color: #10d1ea;
 }
 
-/* line 62, ../sass/contact.scss */
+/* line 66, ../sass/contact.scss */
 .addressText {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-/* line 66, ../sass/contact.scss */
+/* line 70, ../sass/contact.scss */
 .subContact {
   margin-bottom: 10px;
 }
 
-/* line 70, ../sass/contact.scss */
+/* line 74, ../sass/contact.scss */
 .contactInfoCont {
   margin-top: 25px;
+}
+
+/* line 78, ../sass/contact.scss */
+.contactForm {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 84, ../sass/contact.scss */
+  .contactInfoLeft, .contactInfoRight {
+    width: calc(100% - 50px);
+    margin: 0px;
+    margin-left: 25px;
+  }
 }

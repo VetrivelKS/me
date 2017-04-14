@@ -72,20 +72,22 @@ function registerEvents(portfolioJsonNames)
     });
     $('.itemContent').unbind("click").bind("click",function(event)
             {
+                $(".imgFull").attr("src","img/loading.gif");
                 $(".imgFullCont").show();
                 var srcEle = $(event.target).closest(".item").find(".itemImg");
                 var src = $(srcEle).attr("src");
-                src= src.slice(0,-4);
-                var srcImg = src+"_full.jpg";
+                //src= src.slice(0,-4);
+                var srcImg = src.replace("_thumb.JPG",".jpg");
                 srcImg.replace("//","/");
                 $(".imgFullDummy").attr("src",srcImg);
                 $(".imgFullCont").css("top",$(window).scrollTop()+"px");
             });
     $('.crossicon,.imgFullCont').unbind("click").bind("click",function(event)
             {
+                $("body").removeClass("imgDisplaying");
                 $(".imgFullCont").fadeOut(500);
                 $(".imgFullDummy").attr("src","");
-                $(".imgFull").attr("src","")
+                $(".imgFull").attr("src","").hide();
             });
 }
 var slideIndex = 0;
@@ -203,4 +205,5 @@ function imgLoaded()
 {
     $(".imgFull").attr("src",($(".imgFullDummy").attr("src")));
     $(".imgFull").fadeIn(3000);
+    $("body").addClass("imgDisplaying");
 }

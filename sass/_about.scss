@@ -115,7 +115,16 @@ ul
         margin: 10px 0px 0px 10px;
     }
 }
-
+/*.detailBullet
+{
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #10d1ea;
+    float: left;
+    margin-right: 10px;
+}*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
     .aboutTopLeft
