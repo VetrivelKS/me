@@ -263,8 +263,9 @@
 
   /* line 262, ../sass/_home.scss */
   .homeImageContainer {
-    max-height: 410px;
-    max-width: 318px;
+    max-height: 380px;
+    max-width: 295px;
+    padding-bottom: 77.56%;
     height: auto;
     width: auto;
     position: absolute;
@@ -274,22 +275,22 @@
     margin: 0 auto;
   }
 
-  /* line 274, ../sass/_home.scss */
+  /* line 275, ../sass/_home.scss */
   .homeTextContainer {
     margin-top: 15px;
   }
 
-  /* line 278, ../sass/_home.scss */
+  /* line 279, ../sass/_home.scss */
   .homeText {
     font-size: 16px;
   }
 
-  /* line 282, ../sass/_home.scss */
+  /* line 283, ../sass/_home.scss */
   .homeDescContainer {
     margin-top: 5px;
   }
 
-  /* line 286, ../sass/_home.scss */
+  /* line 287, ../sass/_home.scss */
   .homeDescText {
     font-size: 12px;
   }
