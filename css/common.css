@@ -200,7 +200,7 @@
 
 /* line 200, ../sass/_home.scss */
 .homeImg {
-  height: 100%;
+  padding-bottom: 77.56%;
   width: 100%;
   display: none;
   -webkit-transition: all 0.5s ease-in-out;
@@ -209,34 +209,34 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* line 214, ../sass/_home.scss */
+/* line 215, ../sass/_home.scss */
 .homeImg.disp {
   display: block;
 }
 
-/* line 218, ../sass/_home.scss */
+/* line 219, ../sass/_home.scss */
 .photographerSub.colorify {
   color: #f4000e;
 }
 
-/* line 222, ../sass/_home.scss */
+/* line 223, ../sass/_home.scss */
 .designerSub.colorify {
   color: #10d1ea;
 }
 
-/* line 226, ../sass/_home.scss */
+/* line 227, ../sass/_home.scss */
 .developerSub.colorify {
   color: #00dc0e;
 }
 
-/* line 230, ../sass/_home.scss */
+/* line 231, ../sass/_home.scss */
 .homeTextContainer {
   text-align: center;
   z-index: 99;
 }
 
 @media only screen and (min-device-width: 480px) {
-  /* line 237, ../sass/_home.scss */
+  /* line 238, ../sass/_home.scss */
   .homeTextContainer {
     text-align: center;
     position: absolute;
@@ -245,23 +245,23 @@
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 248, ../sass/_home.scss */
+  /* line 249, ../sass/_home.scss */
   .bodyCont {
     width: 100%;
     min-height: 100%;
   }
 
-  /* line 253, ../sass/_home.scss */
+  /* line 254, ../sass/_home.scss */
   .navIcon {
     margin-right: 22px;
   }
 
-  /* line 257, ../sass/_home.scss */
+  /* line 258, ../sass/_home.scss */
   .navIconText {
     font-size: 12px;
   }
 
-  /* line 261, ../sass/_home.scss */
+  /* line 262, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 410px;
     max-width: 318px;
@@ -274,22 +274,22 @@
     margin: 0 auto;
   }
 
-  /* line 273, ../sass/_home.scss */
+  /* line 274, ../sass/_home.scss */
   .homeTextContainer {
     margin-top: 15px;
   }
 
-  /* line 277, ../sass/_home.scss */
+  /* line 278, ../sass/_home.scss */
   .homeText {
     font-size: 16px;
   }
 
-  /* line 281, ../sass/_home.scss */
+  /* line 282, ../sass/_home.scss */
   .homeDescContainer {
     margin-top: 5px;
   }
 
-  /* line 285, ../sass/_home.scss */
+  /* line 286, ../sass/_home.scss */
   .homeDescText {
     font-size: 12px;
   }
@@ -471,7 +471,7 @@ body.designPage ::-webkit-scrollbar {
 /* line 132, ../sass/_portfolio.scss */
 .imgFullCont {
   display: none;
-  height: 100%;
+  height: 120%;
   width: 100%;
   position: absolute;
   top: 0px;
