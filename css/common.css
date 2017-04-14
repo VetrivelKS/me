@@ -252,16 +252,21 @@
   }
 
   /* line 254, ../sass/_home.scss */
+  .navBar {
+    height: 20px;
+  }
+
+  /* line 258, ../sass/_home.scss */
   .navIcon {
     margin-right: 22px;
   }
 
-  /* line 258, ../sass/_home.scss */
+  /* line 262, ../sass/_home.scss */
   .navIconText {
     font-size: 12px;
   }
 
-  /* line 262, ../sass/_home.scss */
+  /* line 266, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 380px;
     max-width: 295px;
@@ -275,22 +280,22 @@
     margin: 0 auto;
   }
 
-  /* line 275, ../sass/_home.scss */
+  /* line 279, ../sass/_home.scss */
   .homeTextContainer {
     margin-top: 15px;
   }
 
-  /* line 279, ../sass/_home.scss */
+  /* line 283, ../sass/_home.scss */
   .homeText {
     font-size: 16px;
   }
 
-  /* line 283, ../sass/_home.scss */
+  /* line 287, ../sass/_home.scss */
   .homeDescContainer {
     margin-top: 5px;
   }
 
-  /* line 287, ../sass/_home.scss */
+  /* line 291, ../sass/_home.scss */
   .homeDescText {
     font-size: 12px;
   }
