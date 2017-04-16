@@ -36,5 +36,11 @@ var photographItems = { classToAppend : "photographItems",
             {dispName:"p33", img:"myminions_thumb.JPG",desc:"My minions"},
             {dispName:"p34", img:"solo_thumb.JPG",desc:"Sleepy"},
             {dispName:"p35", img:"guitar2_thumb.JPG",desc:"Guitarist"},
+            {dispName:"p36", img:"guit1.JPG",desc:"Processing Practice"},
+            {dispName:"p37", img:"guit2.JPG",desc:"KABALI"},
+            {dispName:"p38", img:"kabali.JPG",desc:"KABALI"},
+            {dispName:"p39", img:"white.JPG",desc:"Pure"},
+            {dispName:"p40", img:"brown_hdr.JPG",desc:"Processing Practice"},
+            
 
         ]};

@@ -477,7 +477,7 @@ body.designPage ::-webkit-scrollbar {
 /* line 132, ../sass/_portfolio.scss */
 .imgFullCont {
   display: none;
-  height: 120%;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0px;
