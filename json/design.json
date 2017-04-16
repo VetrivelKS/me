@@ -10,4 +10,7 @@ var designItems = { classToAppend : "designItems",
             {dispName:"d7", img:"5_full_thumb.JPG",desc:"The Laser Saloon Logo"},
             {dispName:"d8", img:"6_full_thumb.JPG",desc:"The Silent Velcro Logo"},
             {dispName:"d9", img:"8_full_thumb.JPG",desc:"Ken's Candy shop Logo"},
+            {dispName:"d10", img:"monk.JPG",desc:"Monk"},
+            {dispName:"d11", img:"kattradhutamil.JPG",desc:"Dream"},
+            {dispName:"d12", img:"Nayanthara.JPG",desc:"Nayanthara"},
             ]};
