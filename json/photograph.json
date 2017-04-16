@@ -36,11 +36,11 @@ var photographItems = { classToAppend : "photographItems",
             {dispName:"p33", img:"myminions_thumb.jpg",desc:"My minions"},
             {dispName:"p34", img:"solo_thumb.jpg",desc:"Sleepy"},
             {dispName:"p35", img:"guitar2_thumb.jpg",desc:"Guitarist"},
-            {dispName:"p36", img:"guit1.jpg",desc:"Processing Practice"},
-            {dispName:"p37", img:"guit2.jpg",desc:"KABALI"},
-            {dispName:"p38", img:"kabali.jpg",desc:"KABALI"},
-            {dispName:"p39", img:"white.jpg",desc:"Pure"},
-            {dispName:"p40", img:"brown_hdr.jpg",desc:"Processing Practice"},
+            {dispName:"p36", img:"guit1_thumb.jpg",desc:"Processing Practice"},
+            {dispName:"p37", img:"guit2_thumb.jpg",desc:"KABALI"},
+            {dispName:"p38", img:"kabali_thumb.jpg",desc:"KABALI"},
+            {dispName:"p39", img:"white_thumb.jpg",desc:"Pure"},
+            {dispName:"p40", img:"brown_hdr_thumb.jpg",desc:"Processing Practice"},
             
 
         ]};
