@@ -538,6 +538,23 @@ body.imgDisplaying {
     max-width: calc(100% - 20px);
   }
 }
+/* line 193, ../sass/_portfolio.scss */
+.sliderArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+
+/* line 200, ../sass/_portfolio.scss */
+.nextArrow {
+  right: 30px;
+}
+
+/* line 204, ../sass/_portfolio.scss */
+.prevArrow {
+  left: 30px;
+}
+
 /* line 1, ../sass/_about.scss */
 .aboutTopCont, .aboutDetails, .aboutSkills {
   width: 100%;

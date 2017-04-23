@@ -190,3 +190,18 @@ body.imgDisplaying
         max-width: calc(100% - 20px);
     }
 }
+.sliderArrow
+{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+}
+
+.nextArrow
+{
+    right: 30px;
+}
+.prevArrow
+{
+    left: 30px;
+}

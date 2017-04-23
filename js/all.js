@@ -72,8 +72,10 @@ function registerEvents(portfolioJsonNames)
     });
     $('.itemContent').unbind("click").bind("click",function(event)
             {
-                $(".imgFull").attr("src","img/loading.gif");
+                //$(".imgFull").attr("src","img/loading.gif");
+                $(".enlarged").removeClass("enlarged");
                 $(".imgFullCont").show();
+                $(event.target).closest(".item").addClass("enlarged");
                 var srcEle = $(event.target).closest(".item").find(".itemImg");
                 var src = $(srcEle).attr("src");
                 //src= src.slice(0,-4);
@@ -84,12 +86,17 @@ function registerEvents(portfolioJsonNames)
             });
     $('.crossicon,.imgFullCont').unbind("click").bind("click",function(event)
             {
-                $("body").removeClass("imgDisplaying");
-                $(".imgFullCont").fadeOut(500);
-                $(".imgFullDummy").attr("src","");
-                $(".imgFull").attr("src","").hide();
+                var arrow = $(event.target).hasClass("sliderArrow");
+                if(!arrow)
+                {
+                    $("body").removeClass("imgDisplaying");
+                    $(".enlarged").removeClass("enlarged");
+                    $(".imgFullCont").fadeOut(500);
+                    $(".imgFullDummy").attr("src","");
+                    $(".imgFull").attr("src","").hide();
+                }
             });
-}
+    }
 var slideIndex = 0;
 function showSlides() {
     var i;
@@ -203,7 +210,35 @@ function dispShow(ele)
 }
 function imgLoaded()
 {
+    //$(".prevArrow").css("left",$(".imgFull").offset().left-20+"px");
+    //$(".nextArrow").css("right",$(".imgFull").width()+20+"px");
     $(".imgFull").attr("src",($(".imgFullDummy").attr("src")));
     $(".imgFull").fadeIn(3000);
     $("body").addClass("imgDisplaying");
+    
+    
+        var prevEle = $(".enlarged").closest(".item").prev(".item").find(".itemContent");
+        var nextEle= $(".enlarged").closest(".item").next(".item").find(".itemContent");
+        if(prevEle.length)
+        {
+            $(".prevArrow").unbind("click").bind("click",function(event)
+            {
+                $(prevEle).trigger("click");
+            });
+        }
+        else
+        {
+            $(".prevArrow").addClass("dim");
+        }
+        if(nextEle.length)
+        {
+            $(".nextArrow").unbind("click").bind("click",function(event)
+            {
+                $(nextEle).trigger("click");
+            });
+        }
+        else
+        {
+            $(".nextArrow").addClass("dim");
+        }
 }
