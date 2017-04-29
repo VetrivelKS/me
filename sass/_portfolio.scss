@@ -189,19 +189,44 @@ body.imgDisplaying
         max-height: calc(100% - 20px);
         max-width: calc(100% - 20px);
     }
+    .nextArrow
+    {
+        right: 30px;
+    }
+    .prevArrow
+    {
+        left: 30px;
+    }
 }
-.sliderArrow
+.arrowCont
 {
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 50%;
     z-index: 100;
+    right: 150px;
+    font-size: 50px;
+    background-color: rgba(255, 253, 253, 0.48);
+    border-radius: 50%;
+    cursor: pointer;
 }
-
+.sliderArrow
+{
+    line-height: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.35);
+}
 .nextArrow
 {
-    right: 30px;
+    right: 150px;
 }
 .prevArrow
 {
-    left: 30px;
+    left: 150px;
+}
+.dim
+{
+    background: rgba(0, 0, 0, 0.3);
+    cursor: default;
 }

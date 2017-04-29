@@ -537,22 +537,52 @@ body.imgDisplaying {
     max-height: calc(100% - 20px);
     max-width: calc(100% - 20px);
   }
+
+  /* line 192, ../sass/_portfolio.scss */
+  .nextArrow {
+    right: 30px;
+  }
+
+  /* line 196, ../sass/_portfolio.scss */
+  .prevArrow {
+    left: 30px;
+  }
 }
-/* line 193, ../sass/_portfolio.scss */
-.sliderArrow {
+/* line 201, ../sass/_portfolio.scss */
+.arrowCont {
+  height: 50px;
+  width: 50px;
   position: absolute;
   top: 50%;
   z-index: 100;
+  right: 150px;
+  font-size: 50px;
+  background-color: rgba(255, 253, 253, 0.48);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-/* line 200, ../sass/_portfolio.scss */
+/* line 214, ../sass/_portfolio.scss */
+.sliderArrow {
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+/* line 220, ../sass/_portfolio.scss */
 .nextArrow {
-  right: 30px;
+  right: 150px;
 }
 
-/* line 204, ../sass/_portfolio.scss */
+/* line 224, ../sass/_portfolio.scss */
 .prevArrow {
-  left: 30px;
+  left: 150px;
+}
+
+/* line 228, ../sass/_portfolio.scss */
+.dim {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 
 /* line 1, ../sass/_about.scss */
