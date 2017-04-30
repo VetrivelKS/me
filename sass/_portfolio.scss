@@ -95,6 +95,14 @@ body.designPage
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
 
 }
 .itemContent.highlight
@@ -105,6 +113,14 @@ body.designPage
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
 }
 .showMoreCont
 {
@@ -229,4 +245,9 @@ body.imgDisplaying
 {
     background: rgba(0, 0, 0, 0.3);
     cursor: default;
+    display: none;
+}
+.pages.photographs,.pages.design
+{
+    margin-top: 45px;
 }

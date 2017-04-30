@@ -53,7 +53,8 @@ ul
 }
 .navBar
 {
-    margin: 10px 0px;
+    margin-bottom: 10px;
+    z-index: 10;
     position: fixed;
     width: 100%;
     height: 40px;
@@ -72,12 +73,15 @@ ul
 }*/
 .navBar
 {
-    position: absolute;
     height: 56px;
     transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 2s ease-in-out; /** Firefox **/
     -o-transition: all 2s ease-in-out; /** Opera **/
+    
+    transform: translateX(-50%);
+    width: inherit;
+    left: 50%;
 }
 /*
 .navIconsContainer
@@ -93,7 +97,7 @@ ul
 .navEleCont
 {
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     right:0px;
 }
 .navIcon
@@ -141,8 +145,9 @@ ul
 }
 .pages
 {
-    margin-top: 76px;
+    margin-top: 65px;
     width: 100%;
+    position: absolute;
 }
 .navEle.highlight
 {
@@ -233,6 +238,10 @@ ul
     text-align: center;
     z-index: 99;
 }
+*::selection
+{
+    background: none;
+}
 @media only screen and (min-device-width : 480px)
 {
     .homeTextContainer
@@ -240,7 +249,7 @@ ul
         text-align: center;
         position: absolute;
         right: 0px;
-        top: 200px;
+        top: 160px;
     }
 }
 
