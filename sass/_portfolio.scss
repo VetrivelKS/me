@@ -251,3 +251,24 @@ body.imgDisplaying
 {
     margin-top: 45px;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
+    .arrowCont
+    {
+        height: 25px;
+        width: 25px;
+        font-size: 25px;
+    }
+    .sliderArrow
+    {
+        line-height: 25px;
+    }
+    .nextArrow
+    {
+        right: 10px;
+    }
+    .prevArrow
+    {
+        left: 10px;
+    }
+}
