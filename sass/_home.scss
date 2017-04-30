@@ -255,6 +255,11 @@ ul
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
+    .pages
+    {
+        height: 100%;
+        margin-top: 30px;
+    }
     .bodyCont
     {
         width: 100%;
@@ -262,7 +267,8 @@ ul
     }
     .navBar
     {
-        height: 20px;
+        height: 30px;
+        margin-top: 10px;
     }
     .navIcon
     {

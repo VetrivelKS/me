@@ -255,27 +255,34 @@
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* line 258, ../sass/_home.scss */
+  .pages {
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  /* line 263, ../sass/_home.scss */
   .bodyCont {
     width: 100%;
     min-height: 100%;
   }
 
-  /* line 263, ../sass/_home.scss */
+  /* line 268, ../sass/_home.scss */
   .navBar {
-    height: 20px;
+    height: 30px;
+    margin-top: 10px;
   }
 
-  /* line 267, ../sass/_home.scss */
+  /* line 273, ../sass/_home.scss */
   .navIcon {
     margin-right: 22px;
   }
 
-  /* line 271, ../sass/_home.scss */
+  /* line 277, ../sass/_home.scss */
   .navIconText {
     font-size: 12px;
   }
 
-  /* line 275, ../sass/_home.scss */
+  /* line 281, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 380px;
     max-width: 295px;
@@ -289,22 +296,22 @@
     margin: 0 auto;
   }
 
-  /* line 288, ../sass/_home.scss */
+  /* line 294, ../sass/_home.scss */
   .homeTextContainer {
     margin-top: 15px;
   }
 
-  /* line 292, ../sass/_home.scss */
+  /* line 298, ../sass/_home.scss */
   .homeText {
     font-size: 16px;
   }
 
-  /* line 296, ../sass/_home.scss */
+  /* line 302, ../sass/_home.scss */
   .homeDescContainer {
     margin-top: 5px;
   }
 
-  /* line 300, ../sass/_home.scss */
+  /* line 306, ../sass/_home.scss */
   .homeDescText {
     font-size: 12px;
   }
