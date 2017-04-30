@@ -557,93 +557,81 @@ body.imgDisplaying {
     height: 100%;
   }
 }
-@media only screen and (max-width: 500px) {
-  /* line 198, ../sass/_portfolio.scss */
-  .imgCont {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* line 203, ../sass/_portfolio.scss */
-  .imgFull {
-    max-height: calc(100% - 20px);
-    max-width: calc(100% - 20px);
-  }
-
-  /* line 208, ../sass/_portfolio.scss */
-  .nextArrow {
-    right: 30px;
-  }
-
-  /* line 212, ../sass/_portfolio.scss */
-  .prevArrow {
-    left: 30px;
-  }
-}
-/* line 217, ../sass/_portfolio.scss */
+/* line 197, ../sass/_portfolio.scss */
 .arrowCont {
   height: 50px;
   width: 50px;
   position: absolute;
   top: 50%;
   z-index: 100;
-  right: 150px;
   font-size: 50px;
   background-color: rgba(255, 253, 253, 0.48);
   border-radius: 50%;
   cursor: pointer;
 }
 
-/* line 230, ../sass/_portfolio.scss */
+/* line 209, ../sass/_portfolio.scss */
 .sliderArrow {
   line-height: 50px;
   text-align: center;
   color: rgba(0, 0, 0, 0.35);
 }
 
-/* line 236, ../sass/_portfolio.scss */
+/* line 215, ../sass/_portfolio.scss */
 .nextArrow {
   right: 150px;
 }
 
-/* line 240, ../sass/_portfolio.scss */
+/* line 219, ../sass/_portfolio.scss */
 .prevArrow {
   left: 150px;
 }
 
-/* line 244, ../sass/_portfolio.scss */
+/* line 223, ../sass/_portfolio.scss */
 .dim {
   background: rgba(0, 0, 0, 0.3);
   cursor: default;
   display: none;
 }
 
-/* line 250, ../sass/_portfolio.scss */
+/* line 229, ../sass/_portfolio.scss */
 .pages.photographs, .pages.design {
   margin-top: 45px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 256, ../sass/_portfolio.scss */
+  /* line 235, ../sass/_portfolio.scss */
   .arrowCont {
     height: 25px;
     width: 25px;
     font-size: 25px;
   }
 
-  /* line 262, ../sass/_portfolio.scss */
+  /* line 241, ../sass/_portfolio.scss */
   .sliderArrow {
     line-height: 25px;
   }
 
-  /* line 266, ../sass/_portfolio.scss */
+  /* line 245, ../sass/_portfolio.scss */
   .nextArrow {
     right: 10px;
   }
 
-  /* line 270, ../sass/_portfolio.scss */
+  /* line 249, ../sass/_portfolio.scss */
   .prevArrow {
     left: 10px;
+  }
+
+  /* line 253, ../sass/_portfolio.scss */
+  .imgCont {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 258, ../sass/_portfolio.scss */
+  .imgFull {
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
   }
 }
 /* line 1, ../sass/_about.scss */

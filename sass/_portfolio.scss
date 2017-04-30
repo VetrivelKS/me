@@ -194,26 +194,6 @@ body.imgDisplaying
     }
 }
 
-@media only screen and (max-width: 500px){
-    .imgCont
-    {
-        width: 100%;
-        height: 100%;
-    }
-    .imgFull
-    {
-        max-height: calc(100% - 20px);
-        max-width: calc(100% - 20px);
-    }
-    .nextArrow
-    {
-        right: 30px;
-    }
-    .prevArrow
-    {
-        left: 30px;
-    }
-}
 .arrowCont
 {
     height: 50px;
@@ -221,7 +201,6 @@ body.imgDisplaying
     position: absolute;
     top: 50%;
     z-index: 100;
-    right: 150px;
     font-size: 50px;
     background-color: rgba(255, 253, 253, 0.48);
     border-radius: 50%;
@@ -270,5 +249,15 @@ body.imgDisplaying
     .prevArrow
     {
         left: 10px;
+    }
+    .imgCont
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .imgFull
+    {
+        max-height: calc(100% - 20px);
+        max-width: calc(100% - 20px);
     }
 }
