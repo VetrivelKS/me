@@ -219,33 +219,38 @@
 }
 
 /* line 224, ../sass/_home.scss */
+.subDesc {
+  cursor: pointer;
+}
+
+/* line 228, ../sass/_home.scss */
 .photographerSub.colorify {
   color: #f4000e;
 }
 
-/* line 228, ../sass/_home.scss */
+/* line 232, ../sass/_home.scss */
 .designerSub.colorify {
   color: #10d1ea;
 }
 
-/* line 232, ../sass/_home.scss */
+/* line 236, ../sass/_home.scss */
 .developerSub.colorify {
   color: #00dc0e;
 }
 
-/* line 236, ../sass/_home.scss */
+/* line 240, ../sass/_home.scss */
 .homeTextContainer {
   text-align: center;
   z-index: 99;
 }
 
-/* line 241, ../sass/_home.scss */
+/* line 245, ../sass/_home.scss */
 *::selection {
   background: none;
 }
 
 @media only screen and (min-device-width: 480px) {
-  /* line 247, ../sass/_home.scss */
+  /* line 251, ../sass/_home.scss */
   .homeTextContainer {
     text-align: center;
     position: absolute;
@@ -254,34 +259,34 @@
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 258, ../sass/_home.scss */
+  /* line 262, ../sass/_home.scss */
   .pages.home {
     height: 100%;
     margin-top: 30px;
   }
 
-  /* line 263, ../sass/_home.scss */
+  /* line 267, ../sass/_home.scss */
   .bodyCont {
     width: 100%;
     min-height: 100%;
   }
 
-  /* line 268, ../sass/_home.scss */
+  /* line 272, ../sass/_home.scss */
   .navBar {
     height: 40px;
   }
 
-  /* line 273, ../sass/_home.scss */
+  /* line 277, ../sass/_home.scss */
   .navIcon {
     margin-right: 22px;
   }
 
-  /* line 277, ../sass/_home.scss */
+  /* line 281, ../sass/_home.scss */
   .navIconText {
     font-size: 12px;
   }
 
-  /* line 281, ../sass/_home.scss */
+  /* line 285, ../sass/_home.scss */
   .homeImageContainer {
     max-height: 380px;
     max-width: 295px;
@@ -295,22 +300,22 @@
     margin: 0 auto;
   }
 
-  /* line 294, ../sass/_home.scss */
+  /* line 298, ../sass/_home.scss */
   .homeTextContainer {
     margin-top: 15px;
   }
 
-  /* line 298, ../sass/_home.scss */
+  /* line 302, ../sass/_home.scss */
   .homeText {
     font-size: 16px;
   }
 
-  /* line 302, ../sass/_home.scss */
+  /* line 306, ../sass/_home.scss */
   .homeDescContainer {
     margin-top: 5px;
   }
 
-  /* line 306, ../sass/_home.scss */
+  /* line 310, ../sass/_home.scss */
   .homeDescText {
     font-size: 12px;
   }
