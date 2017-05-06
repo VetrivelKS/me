@@ -212,6 +212,17 @@ body.imgDisplaying
     text-align: center;
     color: rgba(0, 0, 0, 0.35);
 }
+.arrowCont:hover
+{
+    .sliderArrow
+    {
+        color: rgba(0, 0, 0, 0.58);
+    }
+}
+.arrowCont:active
+{
+    background-color: rgba(120, 124, 138, 0.54);
+}
 .nextArrow
 {
     right: 150px;
