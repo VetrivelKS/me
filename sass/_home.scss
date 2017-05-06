@@ -115,7 +115,7 @@ ul
 .backToPortCat
 {
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 0px;
     margin-left: 10px;
     color: #c9ced8;
@@ -255,7 +255,7 @@ ul
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
-    .pages
+    .pages.home
     {
         height: 100%;
         margin-top: 30px;
@@ -267,8 +267,8 @@ ul
     }
     .navBar
     {
-        height: 30px;
-        margin-top: 10px;
+        height: 40px;
+        //margin-top: 10px;
     }
     .navIcon
     {

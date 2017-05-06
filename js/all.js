@@ -4,11 +4,17 @@ $(document).ready(function() {
         function()
         {
         var toDisplay = $(this).attr("navTo");
+        if(toDisplay == "developer")
+        {
+            alert("I developed this site.\nThis site is the evidence I've got :D ");
+            return;
+        }
         var currentDisp = $("body").attr("currentDisp");
         $("body").attr("currentDisp",toDisplay);
         if(toDisplay != currentDisp)
         {
             $(this).siblings().removeClass("highlight");
+            $('*').removeClass("highlight");
             if($(this).hasClass("navIcon"))
             {
                 $(this,".navIcon ").addClass("highlight");
