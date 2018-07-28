@@ -26,9 +26,7 @@
 }
 
 /* line 30, ../sass/_home.scss */
-::-webkit-scrollbar {
-  display: none;
-}
+
 
 /* line 34, ../sass/_home.scss */
 .show {
@@ -364,9 +362,6 @@
 }
 
 /* line 14, ../sass/_portfolio.scss */
-body.designPage ::-webkit-scrollbar {
-  display: block !important;
-}
 
 /* line 19, ../sass/_portfolio.scss */
 .item {
